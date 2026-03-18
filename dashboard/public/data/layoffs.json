@@ -1,0 +1,524 @@
+{
+  "monthly": {
+    "title": "Monthly Tech Layoffs",
+    "subtitle": "Total employees laid off per month",
+    "labels": [
+      "total"
+    ],
+    "data": [
+      {
+        "date": "2023-01-01",
+        "total": 13462
+      },
+      {
+        "date": "2023-02-01",
+        "total": 11710
+      },
+      {
+        "date": "2023-03-01",
+        "total": 11043
+      },
+      {
+        "date": "2023-04-01",
+        "total": 14943
+      },
+      {
+        "date": "2023-05-01",
+        "total": 9300
+      },
+      {
+        "date": "2023-06-01",
+        "total": 6932
+      },
+      {
+        "date": "2023-07-01",
+        "total": 5627
+      },
+      {
+        "date": "2023-08-01",
+        "total": 6526
+      },
+      {
+        "date": "2023-09-01",
+        "total": 3402
+      },
+      {
+        "date": "2023-10-01",
+        "total": 4830
+      },
+      {
+        "date": "2023-11-01",
+        "total": 5195
+      },
+      {
+        "date": "2023-12-01",
+        "total": 4152
+      },
+      {
+        "date": "2024-01-01",
+        "total": 7699
+      },
+      {
+        "date": "2024-02-01",
+        "total": 4428
+      },
+      {
+        "date": "2024-03-01",
+        "total": 1242
+      },
+      {
+        "date": "2024-04-01",
+        "total": 6248
+      },
+      {
+        "date": "2024-05-01",
+        "total": 7886
+      },
+      {
+        "date": "2024-06-01",
+        "total": 7397
+      },
+      {
+        "date": "2024-07-01",
+        "total": 4691
+      },
+      {
+        "date": "2024-08-01",
+        "total": 1600
+      },
+      {
+        "date": "2024-09-01",
+        "total": 2949
+      },
+      {
+        "date": "2024-10-01",
+        "total": 2740
+      },
+      {
+        "date": "2024-11-01",
+        "total": 2301
+      },
+      {
+        "date": "2024-12-01",
+        "total": 988
+      },
+      {
+        "date": "2025-01-01",
+        "total": 1227
+      },
+      {
+        "date": "2025-02-01",
+        "total": 4141
+      },
+      {
+        "date": "2025-03-01",
+        "total": 587
+      }
+    ]
+  },
+  "cumulative": {
+    "title": "Cumulative Layoffs",
+    "subtitle": "Running total since March 2020",
+    "labels": [
+      "cumulative"
+    ],
+    "data": [
+      {
+        "date": "2023-01-01",
+        "cumulative": 13462
+      },
+      {
+        "date": "2023-02-01",
+        "cumulative": 25172
+      },
+      {
+        "date": "2023-03-01",
+        "cumulative": 36215
+      },
+      {
+        "date": "2023-04-01",
+        "cumulative": 51158
+      },
+      {
+        "date": "2023-05-01",
+        "cumulative": 60458
+      },
+      {
+        "date": "2023-06-01",
+        "cumulative": 67390
+      },
+      {
+        "date": "2023-07-01",
+        "cumulative": 73017
+      },
+      {
+        "date": "2023-08-01",
+        "cumulative": 79543
+      },
+      {
+        "date": "2023-09-01",
+        "cumulative": 82945
+      },
+      {
+        "date": "2023-10-01",
+        "cumulative": 87775
+      },
+      {
+        "date": "2023-11-01",
+        "cumulative": 92970
+      },
+      {
+        "date": "2023-12-01",
+        "cumulative": 97122
+      },
+      {
+        "date": "2024-01-01",
+        "cumulative": 104821
+      },
+      {
+        "date": "2024-02-01",
+        "cumulative": 109249
+      },
+      {
+        "date": "2024-03-01",
+        "cumulative": 110491
+      },
+      {
+        "date": "2024-04-01",
+        "cumulative": 116739
+      },
+      {
+        "date": "2024-05-01",
+        "cumulative": 124625
+      },
+      {
+        "date": "2024-06-01",
+        "cumulative": 132022
+      },
+      {
+        "date": "2024-07-01",
+        "cumulative": 136713
+      },
+      {
+        "date": "2024-08-01",
+        "cumulative": 138313
+      },
+      {
+        "date": "2024-09-01",
+        "cumulative": 141262
+      },
+      {
+        "date": "2024-10-01",
+        "cumulative": 144002
+      },
+      {
+        "date": "2024-11-01",
+        "cumulative": 146303
+      },
+      {
+        "date": "2024-12-01",
+        "cumulative": 147291
+      },
+      {
+        "date": "2025-01-01",
+        "cumulative": 148518
+      },
+      {
+        "date": "2025-02-01",
+        "cumulative": 152659
+      },
+      {
+        "date": "2025-03-01",
+        "cumulative": 153246
+      }
+    ]
+  },
+  "by_industry": [
+    {
+      "industry": "Food",
+      "total": 26009,
+      "companies": 77
+    },
+    {
+      "industry": "Finance",
+      "total": 14643,
+      "companies": 169
+    },
+    {
+      "industry": "Retail",
+      "total": 12829,
+      "companies": 101
+    },
+    {
+      "industry": "Consumer",
+      "total": 12181,
+      "companies": 71
+    },
+    {
+      "industry": "Healthcare",
+      "total": 10944,
+      "companies": 102
+    },
+    {
+      "industry": "Other",
+      "total": 8483,
+      "companies": 84
+    },
+    {
+      "industry": "HR",
+      "total": 8102,
+      "companies": 40
+    },
+    {
+      "industry": "Education",
+      "total": 7409,
+      "companies": 48
+    },
+    {
+      "industry": "Transportation",
+      "total": 7082,
+      "companies": 54
+    },
+    {
+      "industry": "Crypto",
+      "total": 5038,
+      "companies": 65
+    },
+    {
+      "industry": "Marketing",
+      "total": 4880,
+      "companies": 52
+    },
+    {
+      "industry": "Manufacturing",
+      "total": 4687,
+      "companies": 12
+    },
+    {
+      "industry": "Infrastructure",
+      "total": 4207,
+      "companies": 22
+    },
+    {
+      "industry": "Media",
+      "total": 3731,
+      "companies": 45
+    },
+    {
+      "industry": "Security",
+      "total": 2627,
+      "companies": 47
+    },
+    {
+      "industry": "Logistics",
+      "total": 2624,
+      "companies": 23
+    },
+    {
+      "industry": "Recruiting",
+      "total": 2579,
+      "companies": 17
+    },
+    {
+      "industry": "Data",
+      "total": 2463,
+      "companies": 33
+    },
+    {
+      "industry": "Energy",
+      "total": 2448,
+      "companies": 15
+    },
+    {
+      "industry": "Travel",
+      "total": 1625,
+      "companies": 17
+    },
+    {
+      "industry": "Real Estate",
+      "total": 1463,
+      "companies": 34
+    },
+    {
+      "industry": "Hardware",
+      "total": 1262,
+      "companies": 17
+    },
+    {
+      "industry": "Aerospace",
+      "total": 1185,
+      "companies": 7
+    },
+    {
+      "industry": "Sales",
+      "total": 1132,
+      "companies": 21
+    },
+    {
+      "industry": "Support",
+      "total": 1059,
+      "companies": 15
+    },
+    {
+      "industry": "Product",
+      "total": 914,
+      "companies": 17
+    },
+    {
+      "industry": "Fitness",
+      "total": 742,
+      "companies": 11
+    },
+    {
+      "industry": "AI",
+      "total": 375,
+      "companies": 16
+    },
+    {
+      "industry": "Legal",
+      "total": 274,
+      "companies": 6
+    },
+    {
+      "industry": "Construction",
+      "total": 214,
+      "companies": 10
+    },
+    {
+      "industry": null,
+      "total": 35,
+      "companies": 1
+    }
+  ],
+  "top_companies": [
+    {
+      "company": "Flink",
+      "total": 8100,
+      "rounds": 2
+    },
+    {
+      "company": "Getir",
+      "total": 5900,
+      "rounds": 4
+    },
+    {
+      "company": "Paytm",
+      "total": 4500,
+      "rounds": 2
+    },
+    {
+      "company": "Toshiba",
+      "total": 4000,
+      "rounds": 1
+    },
+    {
+      "company": "Indeed",
+      "total": 3200,
+      "rounds": 2
+    },
+    {
+      "company": "Byju's",
+      "total": 3000,
+      "rounds": 3
+    },
+    {
+      "company": "Cerner",
+      "total": 3000,
+      "rounds": 2
+    },
+    {
+      "company": "VMware",
+      "total": 2837,
+      "rounds": 1
+    },
+    {
+      "company": "UKG",
+      "total": 2465,
+      "rounds": 2
+    },
+    {
+      "company": "OLX Group",
+      "total": 2300,
+      "rounds": 2
+    },
+    {
+      "company": "Farfetch",
+      "total": 2000,
+      "rounds": 1
+    },
+    {
+      "company": "Just Eat",
+      "total": 2000,
+      "rounds": 2
+    },
+    {
+      "company": "Bytedance",
+      "total": 1950,
+      "rounds": 4
+    },
+    {
+      "company": "Cruise",
+      "total": 1900,
+      "rounds": 2
+    },
+    {
+      "company": "TikTok",
+      "total": 1610,
+      "rounds": 5
+    },
+    {
+      "company": "Northvolt",
+      "total": 1600,
+      "rounds": 1
+    },
+    {
+      "company": "Yahoo",
+      "total": 1600,
+      "rounds": 3
+    },
+    {
+      "company": "LinkedIn",
+      "total": 1578,
+      "rounds": 4
+    },
+    {
+      "company": "Copia",
+      "total": 1410,
+      "rounds": 2
+    },
+    {
+      "company": "Flipkart",
+      "total": 1100,
+      "rounds": 2
+    }
+  ],
+  "warn_monthly": {
+    "title": "WARN Act Notices (Monthly)",
+    "subtitle": "Government-reported layoff notices, employees affected",
+    "labels": [
+      "total"
+    ],
+    "data": [
+      {
+        "date": "2020-01-01",
+        "total": 44469
+      },
+      {
+        "date": "2020-02-01",
+        "total": 39403
+      },
+      {
+        "date": "2020-03-01",
+        "total": 1104700
+      },
+      {
+        "date": "2020-04-01",
+        "total": 996867
+      },
+      {
+        "date": "2020-05-01",
+        "total": 98302
+      }
+    ]
+  }
+}

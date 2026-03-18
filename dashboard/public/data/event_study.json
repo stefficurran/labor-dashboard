@@ -1,0 +1,1834 @@
+{
+  "events": [
+    {
+      "id": "gpt3-release",
+      "title": "GPT-3 released by OpenAI",
+      "date": "2020-06-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -2.92,
+            "NASDAQ": -1.74,
+            "NVDA": 1.7
+          },
+          {
+            "day": -4,
+            "S&P 500": -1.73,
+            "NASDAQ": -1.58,
+            "NVDA": -1.78
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.27,
+            "NASDAQ": -0.82,
+            "NVDA": -3.95
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.48,
+            "NASDAQ": -1.27,
+            "NVDA": -4.38
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.38,
+            "NASDAQ": 0.66,
+            "NVDA": -0.78
+          },
+          {
+            "day": 1,
+            "S&P 500": 1.2,
+            "NASDAQ": 1.25,
+            "NVDA": -0.57
+          },
+          {
+            "day": 2,
+            "S&P 500": 2.58,
+            "NASDAQ": 2.03,
+            "NVDA": -1.19
+          },
+          {
+            "day": 3,
+            "S&P 500": 2.23,
+            "NASDAQ": 1.33,
+            "NVDA": -1.18
+          },
+          {
+            "day": 4,
+            "S&P 500": 4.91,
+            "NASDAQ": 3.42,
+            "NVDA": 0.55
+          },
+          {
+            "day": 5,
+            "S&P 500": 6.18,
+            "NASDAQ": 4.58,
+            "NVDA": -0.75
+          },
+          {
+            "day": 6,
+            "S&P 500": 5.35,
+            "NASDAQ": 4.89,
+            "NVDA": 1.97
+          },
+          {
+            "day": 7,
+            "S&P 500": 4.79,
+            "NASDAQ": 5.59,
+            "NVDA": 5.58
+          },
+          {
+            "day": 8,
+            "S&P 500": -1.39,
+            "NASDAQ": 0.03,
+            "NVDA": -0.85
+          },
+          {
+            "day": 9,
+            "S&P 500": -0.1,
+            "NASDAQ": 1.04,
+            "NVDA": 0.69
+          },
+          {
+            "day": 10,
+            "S&P 500": 0.73,
+            "NASDAQ": 2.49,
+            "NVDA": 3.41
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 1.2,
+        "sp500_car_3d": 2.23,
+        "sp500_car_10d": 0.73,
+        "nasdaq_car_1d": 1.25,
+        "nasdaq_car_3d": 1.33,
+        "nasdaq_car_10d": 2.49,
+        "nvda_car_1d": -0.57,
+        "nvda_car_3d": -1.18,
+        "nvda_car_10d": 3.41,
+        "tech_premium_10d": 1.76
+      }
+    },
+    {
+      "id": "dall-e-announced",
+      "title": "DALL-E announced",
+      "date": "2021-01-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -1.41,
+            "NASDAQ": -0.65,
+            "NVDA": -0.47
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.55,
+            "NASDAQ": 0.09,
+            "NVDA": -1.19
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.77,
+            "NASDAQ": -0.3,
+            "NVDA": -0.86
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.64,
+            "NASDAQ": -0.14,
+            "NVDA": 0.7
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -1.48,
+            "NASDAQ": -1.47,
+            "NVDA": 0.45
+          },
+          {
+            "day": 1,
+            "S&P 500": -0.78,
+            "NASDAQ": -0.54,
+            "NVDA": 2.68
+          },
+          {
+            "day": 2,
+            "S&P 500": -0.21,
+            "NASDAQ": -1.14,
+            "NVDA": -3.37
+          },
+          {
+            "day": 3,
+            "S&P 500": 1.27,
+            "NASDAQ": 1.39,
+            "NVDA": 2.21
+          },
+          {
+            "day": 4,
+            "S&P 500": 1.83,
+            "NASDAQ": 2.43,
+            "NVDA": 1.7
+          },
+          {
+            "day": 5,
+            "S&P 500": 1.16,
+            "NASDAQ": 1.15,
+            "NVDA": 4.34
+          },
+          {
+            "day": 6,
+            "S&P 500": 1.2,
+            "NASDAQ": 1.43,
+            "NVDA": 3.29
+          },
+          {
+            "day": 7,
+            "S&P 500": 1.43,
+            "NASDAQ": 1.87,
+            "NVDA": 3.65
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.05,
+            "NASDAQ": 1.74,
+            "NVDA": 1.11
+          },
+          {
+            "day": 9,
+            "S&P 500": 0.32,
+            "NASDAQ": 0.86,
+            "NVDA": -1.5
+          },
+          {
+            "day": 10,
+            "S&P 500": 1.14,
+            "NASDAQ": 2.4,
+            "NVDA": -0.23
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": -0.78,
+        "sp500_car_3d": 1.27,
+        "sp500_car_10d": 1.14,
+        "nasdaq_car_1d": -0.54,
+        "nasdaq_car_3d": 1.39,
+        "nasdaq_car_10d": 2.4,
+        "nvda_car_1d": 2.68,
+        "nvda_car_3d": 2.21,
+        "nvda_car_10d": -0.23,
+        "tech_premium_10d": 1.26
+      }
+    },
+    {
+      "id": "github-copilot",
+      "title": "GitHub Copilot launched",
+      "date": "2021-06-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.17,
+            "NASDAQ": -0.64,
+            "NVDA": -3.89
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.38,
+            "NASDAQ": -0.67,
+            "NVDA": -3.67
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.19,
+            "NASDAQ": -0.08,
+            "NVDA": -3.35
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.08,
+            "NASDAQ": -0.09,
+            "NVDA": -4.66
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.05,
+            "NASDAQ": -0.09,
+            "NVDA": 0.12
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.1,
+            "NASDAQ": 0.06,
+            "NVDA": 3.29
+          },
+          {
+            "day": 2,
+            "S&P 500": -0.27,
+            "NASDAQ": -0.98,
+            "NVDA": 4.46
+          },
+          {
+            "day": 3,
+            "S&P 500": 0.61,
+            "NASDAQ": 0.48,
+            "NVDA": 8.21
+          },
+          {
+            "day": 4,
+            "S&P 500": 0.53,
+            "NASDAQ": 0.97,
+            "NVDA": 8.46
+          },
+          {
+            "day": 5,
+            "S&P 500": 0.55,
+            "NASDAQ": 1.28,
+            "NVDA": 7.46
+          },
+          {
+            "day": 6,
+            "S&P 500": 0.37,
+            "NASDAQ": 1.19,
+            "NVDA": 6.88
+          },
+          {
+            "day": 7,
+            "S&P 500": 0.83,
+            "NASDAQ": 1.98,
+            "NVDA": 7.29
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.03,
+            "NASDAQ": 2.33,
+            "NVDA": 9.76
+          },
+          {
+            "day": 9,
+            "S&P 500": 1.21,
+            "NASDAQ": 3.09,
+            "NVDA": 10.95
+          },
+          {
+            "day": 10,
+            "S&P 500": 1.01,
+            "NASDAQ": 2.36,
+            "NVDA": 9.53
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.1,
+        "sp500_car_3d": 0.61,
+        "sp500_car_10d": 1.01,
+        "nasdaq_car_1d": 0.06,
+        "nasdaq_car_3d": 0.48,
+        "nasdaq_car_10d": 2.36,
+        "nvda_car_1d": 3.29,
+        "nvda_car_3d": 8.21,
+        "nvda_car_10d": 9.53,
+        "tech_premium_10d": 1.35
+      }
+    },
+    {
+      "id": "stable-diffusion",
+      "title": "Stable Diffusion released",
+      "date": "2022-08-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -3.96,
+            "NASDAQ": -4.91,
+            "NVDA": -6.27
+          },
+          {
+            "day": -4,
+            "S&P 500": -5.07,
+            "NASDAQ": -6.68,
+            "NVDA": -8.97
+          },
+          {
+            "day": -3,
+            "S&P 500": -2.58,
+            "NASDAQ": -2.89,
+            "NVDA": -2.05
+          },
+          {
+            "day": -2,
+            "S&P 500": -1.4,
+            "NASDAQ": -1.84,
+            "NVDA": -0.99
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.28,
+            "NASDAQ": -0.18,
+            "NVDA": 1.53
+          },
+          {
+            "day": 1,
+            "S&P 500": -0.95,
+            "NASDAQ": -0.34,
+            "NVDA": 2.0
+          },
+          {
+            "day": 2,
+            "S&P 500": 0.6,
+            "NASDAQ": 2.24,
+            "NVDA": 4.02
+          },
+          {
+            "day": 3,
+            "S&P 500": 0.52,
+            "NASDAQ": 2.66,
+            "NVDA": 5.79
+          },
+          {
+            "day": 4,
+            "S&P 500": 0.36,
+            "NASDAQ": 2.15,
+            "NVDA": 4.55
+          },
+          {
+            "day": 5,
+            "S&P 500": 0.24,
+            "NASDAQ": 2.05,
+            "NVDA": -2.04
+          },
+          {
+            "day": 6,
+            "S&P 500": -0.19,
+            "NASDAQ": 0.83,
+            "NVDA": -5.93
+          },
+          {
+            "day": 7,
+            "S&P 500": 1.94,
+            "NASDAQ": 3.75,
+            "NVDA": -0.36
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.86,
+            "NASDAQ": 3.14,
+            "NVDA": -1.22
+          },
+          {
+            "day": 9,
+            "S&P 500": 3.63,
+            "NASDAQ": 5.3,
+            "NVDA": 3.01
+          },
+          {
+            "day": 10,
+            "S&P 500": 4.04,
+            "NASDAQ": 5.95,
+            "NVDA": 4.78
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": -0.95,
+        "sp500_car_3d": 0.52,
+        "sp500_car_10d": 4.04,
+        "nasdaq_car_1d": -0.34,
+        "nasdaq_car_3d": 2.66,
+        "nasdaq_car_10d": 5.95,
+        "nvda_car_1d": 2.0,
+        "nvda_car_3d": 5.79,
+        "nvda_car_10d": 4.78,
+        "tech_premium_10d": 1.91
+      }
+    },
+    {
+      "id": "chatgpt-launch-ai",
+      "title": "ChatGPT launches",
+      "date": "2022-11-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.33,
+            "NASDAQ": 1.92,
+            "NVDA": -1.75
+          },
+          {
+            "day": -4,
+            "S&P 500": -1.07,
+            "NASDAQ": -0.16,
+            "NVDA": -4.45
+          },
+          {
+            "day": -3,
+            "S&P 500": -1.67,
+            "NASDAQ": -1.78,
+            "NVDA": -2.38
+          },
+          {
+            "day": -2,
+            "S&P 500": 0.75,
+            "NASDAQ": 1.04,
+            "NVDA": 2.5
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.41,
+            "NASDAQ": -0.89,
+            "NVDA": 0.34
+          },
+          {
+            "day": 1,
+            "S&P 500": -2.9,
+            "NASDAQ": -4.22,
+            "NVDA": -2.06
+          },
+          {
+            "day": 2,
+            "S&P 500": -3.93,
+            "NASDAQ": -5.87,
+            "NVDA": -0.56
+          },
+          {
+            "day": 3,
+            "S&P 500": -2.62,
+            "NASDAQ": -4.67,
+            "NVDA": 4.88
+          },
+          {
+            "day": 4,
+            "S&P 500": -1.68,
+            "NASDAQ": -3.86,
+            "NVDA": 5.96
+          },
+          {
+            "day": 5,
+            "S&P 500": -1.13,
+            "NASDAQ": -3.39,
+            "NVDA": 8.19
+          },
+          {
+            "day": 6,
+            "S&P 500": -3.19,
+            "NASDAQ": -5.78,
+            "NVDA": 2.07
+          },
+          {
+            "day": 7,
+            "S&P 500": 2.18,
+            "NASDAQ": 1.15,
+            "NVDA": 16.69
+          },
+          {
+            "day": 8,
+            "S&P 500": 3.12,
+            "NASDAQ": 3.05,
+            "NVDA": 20.97
+          },
+          {
+            "day": 9,
+            "S&P 500": 2.2,
+            "NASDAQ": 1.89,
+            "NVDA": 20.73
+          },
+          {
+            "day": 10,
+            "S&P 500": 3.09,
+            "NASDAQ": 3.37,
+            "NVDA": 23.48
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": -2.9,
+        "sp500_car_3d": -2.62,
+        "sp500_car_10d": 3.09,
+        "nasdaq_car_1d": -4.22,
+        "nasdaq_car_3d": -4.67,
+        "nasdaq_car_10d": 3.37,
+        "nvda_car_1d": -2.06,
+        "nvda_car_3d": 4.88,
+        "nvda_car_10d": 23.48,
+        "tech_premium_10d": 0.28
+      }
+    },
+    {
+      "id": "gpt4-release",
+      "title": "GPT-4 released",
+      "date": "2023-03-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": 0.53,
+            "NASDAQ": 0.45,
+            "NVDA": -10.6
+          },
+          {
+            "day": -4,
+            "S&P 500": 1.06,
+            "NASDAQ": 1.18,
+            "NVDA": 1.93
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.0,
+            "NASDAQ": -0.53,
+            "NVDA": 0.3
+          },
+          {
+            "day": -2,
+            "S&P 500": 0.3,
+            "NASDAQ": 0.1,
+            "NVDA": 1.23
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.47,
+            "NASDAQ": -0.66,
+            "NVDA": -2.23
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.28,
+            "NASDAQ": 0.06,
+            "NVDA": 0.42
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.9,
+            "NASDAQ": 2.04,
+            "NVDA": 2.9
+          },
+          {
+            "day": 3,
+            "S&P 500": 1.97,
+            "NASDAQ": 1.92,
+            "NVDA": 1.46
+          },
+          {
+            "day": 4,
+            "S&P 500": 0.41,
+            "NASDAQ": 0.65,
+            "NVDA": 0.33
+          },
+          {
+            "day": 5,
+            "S&P 500": 0.55,
+            "NASDAQ": 1.05,
+            "NVDA": 4.17
+          },
+          {
+            "day": 6,
+            "S&P 500": -1.31,
+            "NASDAQ": -1.02,
+            "NVDA": 0.96
+          },
+          {
+            "day": 7,
+            "S&P 500": -2.73,
+            "NASDAQ": -2.76,
+            "NVDA": -1.06
+          },
+          {
+            "day": 8,
+            "S&P 500": -2.88,
+            "NASDAQ": -2.33,
+            "NVDA": -1.06
+          },
+          {
+            "day": 9,
+            "S&P 500": -1.28,
+            "NASDAQ": -0.24,
+            "NVDA": 3.67
+          },
+          {
+            "day": 10,
+            "S&P 500": -1.97,
+            "NASDAQ": -0.19,
+            "NVDA": 4.38
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.28,
+        "sp500_car_3d": 1.97,
+        "sp500_car_10d": -1.97,
+        "nasdaq_car_1d": 0.06,
+        "nasdaq_car_3d": 1.92,
+        "nasdaq_car_10d": -0.19,
+        "nvda_car_1d": 0.42,
+        "nvda_car_3d": 1.46,
+        "nvda_car_10d": 4.38,
+        "tech_premium_10d": 1.78
+      }
+    },
+    {
+      "id": "claude2-llama2",
+      "title": "Claude 2 and Llama 2 released",
+      "date": "2023-07-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -2.73,
+            "NASDAQ": -3.28,
+            "NVDA": -3.95
+          },
+          {
+            "day": -4,
+            "S&P 500": -1.62,
+            "NASDAQ": -1.68,
+            "NVDA": -1.01
+          },
+          {
+            "day": -3,
+            "S&P 500": -1.65,
+            "NASDAQ": -1.42,
+            "NVDA": -2.8
+          },
+          {
+            "day": -2,
+            "S&P 500": -1.21,
+            "NASDAQ": -1.43,
+            "NVDA": -3.5
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.12,
+            "NASDAQ": 0.21,
+            "NVDA": 0.26
+          },
+          {
+            "day": 1,
+            "S&P 500": -0.08,
+            "NASDAQ": 0.03,
+            "NVDA": 0.04
+          },
+          {
+            "day": 2,
+            "S&P 500": -0.87,
+            "NASDAQ": -0.79,
+            "NVDA": -0.47
+          },
+          {
+            "day": 3,
+            "S&P 500": -1.16,
+            "NASDAQ": -0.92,
+            "NVDA": 0.48
+          },
+          {
+            "day": 4,
+            "S&P 500": -0.92,
+            "NASDAQ": -0.74,
+            "NVDA": -0.29
+          },
+          {
+            "day": 5,
+            "S&P 500": -0.25,
+            "NASDAQ": -0.2,
+            "NVDA": 0.24
+          },
+          {
+            "day": 6,
+            "S&P 500": 0.49,
+            "NASDAQ": 0.95,
+            "NVDA": 3.78
+          },
+          {
+            "day": 7,
+            "S&P 500": 1.34,
+            "NASDAQ": 2.54,
+            "NVDA": 8.69
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.24,
+            "NASDAQ": 2.36,
+            "NVDA": 7.49
+          },
+          {
+            "day": 9,
+            "S&P 500": 1.63,
+            "NASDAQ": 3.31,
+            "NVDA": 9.83
+          },
+          {
+            "day": 10,
+            "S&P 500": 2.35,
+            "NASDAQ": 4.1,
+            "NVDA": 12.27
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": -0.08,
+        "sp500_car_3d": -1.16,
+        "sp500_car_10d": 2.35,
+        "nasdaq_car_1d": 0.03,
+        "nasdaq_car_3d": -0.92,
+        "nasdaq_car_10d": 4.1,
+        "nvda_car_1d": 0.04,
+        "nvda_car_3d": 0.48,
+        "nvda_car_10d": 12.27,
+        "tech_premium_10d": 1.75
+      }
+    },
+    {
+      "id": "gemini-launch",
+      "title": "Google launches Gemini",
+      "date": "2023-12-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.19,
+            "NASDAQ": 0.17,
+            "NVDA": 2.15
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.38,
+            "NASDAQ": 0.1,
+            "NVDA": 3.15
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.28,
+            "NASDAQ": 0.39,
+            "NVDA": 2.25
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.38,
+            "NASDAQ": 0.23,
+            "NVDA": 2.93
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.59,
+            "NASDAQ": 0.55,
+            "NVDA": -0.01
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.04,
+            "NASDAQ": -0.29,
+            "NVDA": -2.69
+          },
+          {
+            "day": 2,
+            "S&P 500": -0.01,
+            "NASDAQ": 0.03,
+            "NVDA": -0.43
+          },
+          {
+            "day": 3,
+            "S&P 500": -0.4,
+            "NASDAQ": -0.56,
+            "NVDA": -2.7
+          },
+          {
+            "day": 4,
+            "S&P 500": 0.39,
+            "NASDAQ": 0.8,
+            "NVDA": -0.36
+          },
+          {
+            "day": 5,
+            "S&P 500": 0.8,
+            "NASDAQ": 1.25,
+            "NVDA": 1.58
+          },
+          {
+            "day": 6,
+            "S&P 500": 1.2,
+            "NASDAQ": 1.45,
+            "NVDA": -0.3
+          },
+          {
+            "day": 7,
+            "S&P 500": 1.66,
+            "NASDAQ": 2.16,
+            "NVDA": 1.91
+          },
+          {
+            "day": 8,
+            "S&P 500": 3.05,
+            "NASDAQ": 3.57,
+            "NVDA": 2.83
+          },
+          {
+            "day": 9,
+            "S&P 500": 3.32,
+            "NASDAQ": 3.76,
+            "NVDA": 3.39
+          },
+          {
+            "day": 10,
+            "S&P 500": 3.31,
+            "NASDAQ": 4.13,
+            "NVDA": 4.54
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.04,
+        "sp500_car_3d": -0.4,
+        "sp500_car_10d": 3.31,
+        "nasdaq_car_1d": -0.29,
+        "nasdaq_car_3d": -0.56,
+        "nasdaq_car_10d": 4.13,
+        "nvda_car_1d": -2.69,
+        "nvda_car_3d": -2.7,
+        "nvda_car_10d": 4.54,
+        "tech_premium_10d": 0.82
+      }
+    },
+    {
+      "id": "claude3-family",
+      "title": "Claude 3 model family",
+      "date": "2024-03-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.15,
+            "NASDAQ": -0.59,
+            "NVDA": -0.37
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.52,
+            "NASDAQ": -0.72,
+            "NVDA": -0.03
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.35,
+            "NASDAQ": -0.35,
+            "NVDA": -0.52
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.52,
+            "NASDAQ": -0.9,
+            "NVDA": -1.83
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.8,
+            "NASDAQ": 1.14,
+            "NVDA": 4.0
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.68,
+            "NASDAQ": 0.72,
+            "NVDA": 7.74
+          },
+          {
+            "day": 2,
+            "S&P 500": -0.35,
+            "NASDAQ": -0.95,
+            "NVDA": 8.67
+          },
+          {
+            "day": 3,
+            "S&P 500": 0.17,
+            "NASDAQ": -0.38,
+            "NVDA": 12.12
+          },
+          {
+            "day": 4,
+            "S&P 500": 1.2,
+            "NASDAQ": 1.13,
+            "NVDA": 17.14
+          },
+          {
+            "day": 5,
+            "S&P 500": 0.54,
+            "NASDAQ": -0.04,
+            "NVDA": 10.64
+          },
+          {
+            "day": 6,
+            "S&P 500": 0.43,
+            "NASDAQ": -0.45,
+            "NVDA": 8.43
+          },
+          {
+            "day": 7,
+            "S&P 500": 1.55,
+            "NASDAQ": 1.08,
+            "NVDA": 16.19
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.35,
+            "NASDAQ": 0.53,
+            "NVDA": 14.89
+          },
+          {
+            "day": 9,
+            "S&P 500": 1.06,
+            "NASDAQ": 0.23,
+            "NVDA": 11.17
+          },
+          {
+            "day": 10,
+            "S&P 500": 0.41,
+            "NASDAQ": -0.74,
+            "NVDA": 11.03
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.68,
+        "sp500_car_3d": 0.17,
+        "sp500_car_10d": 0.41,
+        "nasdaq_car_1d": 0.72,
+        "nasdaq_car_3d": -0.38,
+        "nasdaq_car_10d": -0.74,
+        "nvda_car_1d": 7.74,
+        "nvda_car_3d": 12.12,
+        "nvda_car_10d": 11.03,
+        "tech_premium_10d": -1.15
+      }
+    },
+    {
+      "id": "gpt4o-release",
+      "title": "GPT-4o released",
+      "date": "2024-05-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": 0.71,
+            "NASDAQ": 0.35,
+            "NVDA": -7.78
+          },
+          {
+            "day": -4,
+            "S&P 500": 0.25,
+            "NASDAQ": -0.29,
+            "NVDA": -4.36
+          },
+          {
+            "day": -3,
+            "S&P 500": 1.28,
+            "NASDAQ": 1.72,
+            "NVDA": 1.54
+          },
+          {
+            "day": -2,
+            "S&P 500": 1.6,
+            "NASDAQ": 2.08,
+            "NVDA": 1.57
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.34,
+            "NASDAQ": -0.33,
+            "NVDA": -3.89
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.57,
+            "NASDAQ": 1.17,
+            "NVDA": -0.68
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.83,
+            "NASDAQ": 3.18,
+            "NVDA": 2.76
+          },
+          {
+            "day": 3,
+            "S&P 500": 2.88,
+            "NASDAQ": 4.42,
+            "NVDA": 6.64
+          },
+          {
+            "day": 4,
+            "S&P 500": 3.02,
+            "NASDAQ": 4.31,
+            "NVDA": 4.81
+          },
+          {
+            "day": 5,
+            "S&P 500": 3.02,
+            "NASDAQ": 4.12,
+            "NVDA": 4.64
+          },
+          {
+            "day": 6,
+            "S&P 500": 3.54,
+            "NASDAQ": 4.4,
+            "NVDA": 2.71
+          },
+          {
+            "day": 7,
+            "S&P 500": 3.71,
+            "NASDAQ": 4.36,
+            "NVDA": 4.02
+          },
+          {
+            "day": 8,
+            "S&P 500": 3.69,
+            "NASDAQ": 4.66,
+            "NVDA": 4.63
+          },
+          {
+            "day": 9,
+            "S&P 500": 4.19,
+            "NASDAQ": 5.45,
+            "NVDA": 5.73
+          },
+          {
+            "day": 10,
+            "S&P 500": 5.41,
+            "NASDAQ": 6.93,
+            "NVDA": 9.52
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.57,
+        "sp500_car_3d": 2.88,
+        "sp500_car_10d": 5.41,
+        "nasdaq_car_1d": 1.17,
+        "nasdaq_car_3d": 4.42,
+        "nasdaq_car_10d": 6.93,
+        "nvda_car_1d": -0.68,
+        "nvda_car_3d": 6.64,
+        "nvda_car_10d": 9.52,
+        "tech_premium_10d": 1.52
+      }
+    },
+    {
+      "id": "claude35-sonnet",
+      "title": "Claude 3.5 Sonnet released",
+      "date": "2024-06-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": 0.52,
+            "NASDAQ": 1.11,
+            "NVDA": -2.89
+          },
+          {
+            "day": -4,
+            "S&P 500": 0.54,
+            "NASDAQ": 1.7,
+            "NVDA": 3.89
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.2,
+            "NASDAQ": 1.11,
+            "NVDA": 4.74
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.8,
+            "NASDAQ": 0.01,
+            "NVDA": 0.79
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.11,
+            "NASDAQ": 0.56,
+            "NVDA": 4.9
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.26,
+            "NASDAQ": 0.73,
+            "NVDA": 6.21
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.45,
+            "NASDAQ": 2.71,
+            "NVDA": 11.68
+          },
+          {
+            "day": 3,
+            "S&P 500": 1.43,
+            "NASDAQ": 2.62,
+            "NVDA": 10.37
+          },
+          {
+            "day": 4,
+            "S&P 500": 1.32,
+            "NASDAQ": 2.38,
+            "NVDA": 10.27
+          },
+          {
+            "day": 5,
+            "S&P 500": 1.58,
+            "NASDAQ": 2.73,
+            "NVDA": 11.09
+          },
+          {
+            "day": 6,
+            "S&P 500": 1.85,
+            "NASDAQ": 3.64,
+            "NVDA": 10.3
+          },
+          {
+            "day": 7,
+            "S&P 500": 2.72,
+            "NASDAQ": 5.22,
+            "NVDA": 14.21
+          },
+          {
+            "day": 8,
+            "S&P 500": 2.96,
+            "NASDAQ": 5.57,
+            "NVDA": 18.23
+          },
+          {
+            "day": 9,
+            "S&P 500": 2.92,
+            "NASDAQ": 5.7,
+            "NVDA": 20.3
+          },
+          {
+            "day": 10,
+            "S&P 500": 3.71,
+            "NASDAQ": 6.7,
+            "NVDA": 19.48
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.26,
+        "sp500_car_3d": 1.43,
+        "sp500_car_10d": 3.71,
+        "nasdaq_car_1d": 0.73,
+        "nasdaq_car_3d": 2.62,
+        "nasdaq_car_10d": 6.7,
+        "nvda_car_1d": 6.21,
+        "nvda_car_3d": 10.37,
+        "nvda_car_10d": 19.48,
+        "tech_premium_10d": 2.99
+      }
+    },
+    {
+      "id": "llama31-release",
+      "title": "Llama 3.1 405B released",
+      "date": "2024-07-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.23,
+            "NASDAQ": -1.33,
+            "NVDA": -4.4
+          },
+          {
+            "day": -4,
+            "S&P 500": 0.16,
+            "NASDAQ": -0.08,
+            "NVDA": 2.06
+          },
+          {
+            "day": -3,
+            "S&P 500": 0.32,
+            "NASDAQ": 0.41,
+            "NVDA": 2.32
+          },
+          {
+            "day": -2,
+            "S&P 500": 0.41,
+            "NASDAQ": 0.71,
+            "NVDA": 0.36
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.27,
+            "NASDAQ": 0.83,
+            "NVDA": 0.62
+          },
+          {
+            "day": 1,
+            "S&P 500": 0.89,
+            "NASDAQ": 1.67,
+            "NVDA": -0.7
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.4,
+            "NASDAQ": 2.57,
+            "NVDA": 3.84
+          },
+          {
+            "day": 3,
+            "S&P 500": 1.95,
+            "NASDAQ": 3.5,
+            "NVDA": 1.85
+          },
+          {
+            "day": 4,
+            "S&P 500": 2.06,
+            "NASDAQ": 3.78,
+            "NVDA": 3.77
+          },
+          {
+            "day": 5,
+            "S&P 500": 2.13,
+            "NASDAQ": 3.93,
+            "NVDA": 6.35
+          },
+          {
+            "day": 6,
+            "S&P 500": 3.18,
+            "NASDAQ": 5.16,
+            "NVDA": 9.2
+          },
+          {
+            "day": 7,
+            "S&P 500": 2.27,
+            "NASDAQ": 3.11,
+            "NVDA": 3.12
+          },
+          {
+            "day": 8,
+            "S&P 500": 2.84,
+            "NASDAQ": 3.75,
+            "NVDA": 4.61
+          },
+          {
+            "day": 9,
+            "S&P 500": 3.13,
+            "NASDAQ": 4.17,
+            "NVDA": 3.97
+          },
+          {
+            "day": 10,
+            "S&P 500": 3.79,
+            "NASDAQ": 4.38,
+            "NVDA": 2.28
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 0.89,
+        "sp500_car_3d": 1.95,
+        "sp500_car_10d": 3.79,
+        "nasdaq_car_1d": 1.67,
+        "nasdaq_car_3d": 3.5,
+        "nasdaq_car_10d": 4.38,
+        "nvda_car_1d": -0.7,
+        "nvda_car_3d": 1.85,
+        "nvda_car_10d": 2.28,
+        "tech_premium_10d": 0.59
+      }
+    },
+    {
+      "id": "o1-reasoning",
+      "title": "OpenAI o1 reasoning model",
+      "date": "2024-09-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -0.56,
+            "NASDAQ": 0.07,
+            "NVDA": 5.94
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.4,
+            "NASDAQ": 0.23,
+            "NVDA": 7.48
+          },
+          {
+            "day": -3,
+            "S&P 500": -1.0,
+            "NASDAQ": -0.89,
+            "NVDA": 5.23
+          },
+          {
+            "day": -2,
+            "S&P 500": -1.0,
+            "NASDAQ": -1.11,
+            "NVDA": -1.49
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -2.12,
+            "NASDAQ": -3.26,
+            "NVDA": -9.53
+          },
+          {
+            "day": 1,
+            "S&P 500": -2.27,
+            "NASDAQ": -3.55,
+            "NVDA": -11.02
+          },
+          {
+            "day": 2,
+            "S&P 500": -2.57,
+            "NASDAQ": -3.31,
+            "NVDA": -10.19
+          },
+          {
+            "day": 3,
+            "S&P 500": -4.25,
+            "NASDAQ": -5.77,
+            "NVDA": -13.86
+          },
+          {
+            "day": 4,
+            "S&P 500": -3.14,
+            "NASDAQ": -4.68,
+            "NVDA": -10.81
+          },
+          {
+            "day": 5,
+            "S&P 500": -2.71,
+            "NASDAQ": -3.88,
+            "NVDA": -9.44
+          },
+          {
+            "day": 6,
+            "S&P 500": -1.67,
+            "NASDAQ": -1.8,
+            "NVDA": -2.06
+          },
+          {
+            "day": 7,
+            "S&P 500": -0.93,
+            "NASDAQ": -0.81,
+            "NVDA": -0.18
+          },
+          {
+            "day": 8,
+            "S&P 500": -0.4,
+            "NASDAQ": -0.17,
+            "NVDA": -0.22
+          },
+          {
+            "day": 9,
+            "S&P 500": -0.27,
+            "NASDAQ": -0.69,
+            "NVDA": -2.16
+          },
+          {
+            "day": 10,
+            "S&P 500": -0.24,
+            "NASDAQ": -0.48,
+            "NVDA": -3.16
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": -2.27,
+        "sp500_car_3d": -4.25,
+        "sp500_car_10d": -0.24,
+        "nasdaq_car_1d": -3.55,
+        "nasdaq_car_3d": -5.77,
+        "nasdaq_car_10d": -0.48,
+        "nvda_car_1d": -11.02,
+        "nvda_car_3d": -13.86,
+        "nvda_car_10d": -3.16,
+        "tech_premium_10d": -0.24
+      }
+    },
+    {
+      "id": "deepseek-r1",
+      "title": "DeepSeek R1 disrupts the market",
+      "date": "2025-01-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": 2.69,
+            "NASDAQ": 3.73,
+            "NVDA": 4.42
+          },
+          {
+            "day": -4,
+            "S&P 500": 2.65,
+            "NASDAQ": 3.67,
+            "NVDA": 4.2
+          },
+          {
+            "day": -3,
+            "S&P 500": 1.52,
+            "NASDAQ": 2.13,
+            "NVDA": 2.03
+          },
+          {
+            "day": -2,
+            "S&P 500": 0.43,
+            "NASDAQ": 0.91,
+            "NVDA": 2.38
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": -0.22,
+            "NASDAQ": -0.16,
+            "NVDA": 2.99
+          },
+          {
+            "day": 1,
+            "S&P 500": 1.03,
+            "NASDAQ": 1.61,
+            "NVDA": 7.58
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.59,
+            "NASDAQ": 2.87,
+            "NVDA": 11.27
+          },
+          {
+            "day": 3,
+            "S&P 500": 0.47,
+            "NASDAQ": 0.93,
+            "NVDA": 4.36
+          },
+          {
+            "day": 4,
+            "S&P 500": 0.62,
+            "NASDAQ": 0.87,
+            "NVDA": 4.33
+          },
+          {
+            "day": 5,
+            "S&P 500": -0.93,
+            "NASDAQ": -0.77,
+            "NVDA": 1.21
+          },
+          {
+            "day": 6,
+            "S&P 500": -0.77,
+            "NASDAQ": -1.15,
+            "NVDA": -0.79
+          },
+          {
+            "day": 7,
+            "S&P 500": -0.66,
+            "NASDAQ": -1.38,
+            "NVDA": -1.88
+          },
+          {
+            "day": 8,
+            "S&P 500": 1.16,
+            "NASDAQ": 1.04,
+            "NVDA": 1.45
+          },
+          {
+            "day": 9,
+            "S&P 500": 0.95,
+            "NASDAQ": 0.14,
+            "NVDA": -0.54
+          },
+          {
+            "day": 10,
+            "S&P 500": 1.96,
+            "NASDAQ": 1.65,
+            "NVDA": 2.55
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 1.03,
+        "sp500_car_3d": 0.47,
+        "sp500_car_10d": 1.96,
+        "nasdaq_car_1d": 1.61,
+        "nasdaq_car_3d": 0.93,
+        "nasdaq_car_10d": 1.65,
+        "nvda_car_1d": 7.58,
+        "nvda_car_3d": 4.36,
+        "nvda_car_10d": 2.55,
+        "tech_premium_10d": -0.31
+      }
+    },
+    {
+      "id": "claude4-opus",
+      "title": "Claude 4 / Opus released",
+      "date": "2025-05-01",
+      "window": {
+        "labels": [
+          "S&P 500",
+          "NASDAQ",
+          "NVDA"
+        ],
+        "data": [
+          {
+            "day": -5,
+            "S&P 500": -1.51,
+            "NASDAQ": -1.61,
+            "NVDA": -2.29
+          },
+          {
+            "day": -4,
+            "S&P 500": -0.79,
+            "NASDAQ": -0.36,
+            "NVDA": 1.92
+          },
+          {
+            "day": -3,
+            "S&P 500": -0.72,
+            "NASDAQ": -0.46,
+            "NVDA": -0.17
+          },
+          {
+            "day": -2,
+            "S&P 500": -0.15,
+            "NASDAQ": 0.09,
+            "NVDA": 0.09
+          },
+          {
+            "day": -1,
+            "S&P 500": 0.0,
+            "NASDAQ": 0.0,
+            "NVDA": 0.0
+          },
+          {
+            "day": 0,
+            "S&P 500": 0.63,
+            "NASDAQ": 1.52,
+            "NVDA": 2.47
+          },
+          {
+            "day": 1,
+            "S&P 500": 2.11,
+            "NASDAQ": 3.05,
+            "NVDA": 5.12
+          },
+          {
+            "day": 2,
+            "S&P 500": 1.46,
+            "NASDAQ": 2.28,
+            "NVDA": 4.5
+          },
+          {
+            "day": 3,
+            "S&P 500": 0.68,
+            "NASDAQ": 1.39,
+            "NVDA": 4.24
+          },
+          {
+            "day": 4,
+            "S&P 500": 1.12,
+            "NASDAQ": 1.67,
+            "NVDA": 7.47
+          },
+          {
+            "day": 5,
+            "S&P 500": 1.7,
+            "NASDAQ": 2.76,
+            "NVDA": 7.76
+          },
+          {
+            "day": 6,
+            "S&P 500": 1.63,
+            "NASDAQ": 2.77,
+            "NVDA": 7.1
+          },
+          {
+            "day": 7,
+            "S&P 500": 4.94,
+            "NASDAQ": 7.23,
+            "NVDA": 12.93
+          },
+          {
+            "day": 8,
+            "S&P 500": 5.7,
+            "NASDAQ": 8.96,
+            "NVDA": 19.29
+          },
+          {
+            "day": 9,
+            "S&P 500": 5.81,
+            "NASDAQ": 9.75,
+            "NVDA": 24.26
+          },
+          {
+            "day": 10,
+            "S&P 500": 6.25,
+            "NASDAQ": 9.55,
+            "NVDA": 23.79
+          }
+        ]
+      },
+      "summary": {
+        "sp500_car_1d": 2.11,
+        "sp500_car_3d": 0.68,
+        "sp500_car_10d": 6.25,
+        "nasdaq_car_1d": 3.05,
+        "nasdaq_car_3d": 1.39,
+        "nasdaq_car_10d": 9.55,
+        "nvda_car_1d": 5.12,
+        "nvda_car_3d": 4.24,
+        "nvda_car_10d": 23.79,
+        "tech_premium_10d": 3.3
+      }
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "id": "dotcom-bust",
+    "date": "2001-03-01",
+    "title": "Dot-com bubble bursts",
+    "description": "The NASDAQ crashes after years of speculative investment in internet companies. Hundreds of startups shut down, and tech employment begins a multi-year decline.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "911-shock",
+    "date": "2001-09-01",
+    "title": "Post-9/11 economic shock",
+    "description": "The September 11 attacks trigger a sharp economic downturn. Tech spending freezes as businesses cut budgets, accelerating layoffs that were already underway from the dot-com bust.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "telecom-collapse",
+    "date": "2002-07-01",
+    "title": "Telecom industry collapse",
+    "description": "WorldCom files for bankruptcy amid accounting fraud. The telecom sector, a major employer within the Information industry, sheds hundreds of thousands of jobs.",
+    "category": "company_event",
+    "impact": "major"
+  },
+  {
+    "id": "sarbanes-oxley",
+    "date": "2002-07-01",
+    "title": "Sarbanes-Oxley Act signed",
+    "description": "New corporate governance regulations increase compliance costs for tech companies. The law reshapes how public companies operate in response to Enron and WorldCom scandals.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "tech-recovery-begins",
+    "date": "2004-01-01",
+    "title": "Tech hiring recovery begins",
+    "description": "After three years of decline, tech companies start hiring again. Google's IPO in August 2004 signals renewed investor confidence in the sector.",
+    "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "web2-boom",
+    "date": "2005-06-01",
+    "title": "Web 2.0 hiring boom",
+    "description": "Social media and user-generated content platforms drive a new wave of tech hiring. Companies like Facebook, YouTube, and Twitter are scaling rapidly.",
+    "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "iphone-launch",
+    "date": "2007-06-01",
+    "title": "iPhone launches, mobile era begins",
+    "description": "Apple's iPhone creates an entirely new platform for software development. The mobile app economy will eventually employ hundreds of thousands of developers.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "great-recession-starts",
+    "date": "2007-12-01",
+    "title": "Great Recession begins",
+    "description": "The U.S. enters its worst recession since the 1930s. While tech is hit less hard than construction and finance, hiring freezes spread across the industry.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "lehman-collapse",
+    "date": "2008-09-01",
+    "title": "Lehman Brothers collapses",
+    "description": "The investment bank's bankruptcy triggers a global financial crisis. Tech companies cut budgets and freeze hiring as the economy enters freefall.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "stimulus-arra",
+    "date": "2009-02-01",
+    "title": "ARRA stimulus signed",
+    "description": "The American Recovery and Reinvestment Act includes $7.2 billion for broadband expansion and tech infrastructure, helping stabilize the sector.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "tech-recovery-2010",
+    "date": "2010-01-01",
+    "title": "Tech hiring recovery post-recession",
+    "description": "Tech companies lead the economic recovery. Cloud computing and mobile development create new job categories, and Silicon Valley hiring accelerates.",
+    "category": "hiring_boom",
+    "impact": "major"
+  },
+  {
+    "id": "cloud-surge",
+    "date": "2011-06-01",
+    "title": "Cloud computing hiring surge",
+    "description": "AWS, Azure, and Google Cloud drive massive demand for cloud engineers, DevOps, and infrastructure roles. Enterprise IT spending shifts from hardware to cloud services.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "facebook-ipo",
+    "date": "2012-05-01",
+    "title": "Facebook IPO",
+    "description": "Facebook goes public at a $104 billion valuation, the largest tech IPO in history at the time. Social media companies accelerate hiring across engineering and content moderation.",
+    "category": "company_event",
+    "impact": "moderate"
+  },
+  {
+    "id": "big-data-boom",
+    "date": "2013-01-01",
+    "title": "Big data and analytics boom",
+    "description": "Data scientist becomes the 'sexiest job of the 21st century.' Companies across industries hire data teams, driving demand for analytics, ML, and data engineering talent.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "cloud-enterprise-shift",
+    "date": "2014-01-01",
+    "title": "Enterprise cloud adoption accelerates",
+    "description": "Large enterprises move workloads to the cloud at scale. AWS revenue doubles, and demand for cloud architects, SREs, and platform engineers skyrockets.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "gig-economy-rise",
+    "date": "2015-06-01",
+    "title": "Gig economy platforms scale up",
+    "description": "Uber, Lyft, and DoorDash expand aggressively, hiring thousands of engineers while reshaping debates about worker classification and labor law.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "trump-h1b-restrictions",
+    "date": "2017-04-01",
+    "title": "H-1B visa restrictions tighten",
+    "description": "Executive orders increase scrutiny on H-1B visas, affecting tech companies' ability to hire foreign talent. Denial rates increase sharply over the next two years.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "tech-hiring-peak-2018",
+    "date": "2018-06-01",
+    "title": "Pre-pandemic tech hiring peak",
+    "description": "Tech employment reaches record levels as FAANG companies, enterprise software firms, and startups compete aggressively for talent. Salaries surge.",
+    "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "trade-war-uncertainty",
+    "date": "2019-05-01",
+    "title": "US-China trade war escalates",
+    "description": "Tariffs and export controls create uncertainty for hardware companies and chipmakers. Huawei is banned from US technology, disrupting global supply chains.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "covid-lockdowns",
+    "date": "2020-03-01",
+    "title": "COVID-19 lockdowns begin",
+    "description": "The pandemic triggers the fastest labor market collapse in U.S. history. Tech is hit less than hospitality and retail, but startups freeze hiring and some cut staff.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "cares-act",
+    "date": "2020-03-01",
+    "title": "CARES Act and PPP loans",
+    "description": "Massive fiscal stimulus helps companies retain workers. The $2 trillion package includes forgivable loans that prevent many tech companies from doing layoffs.",
+    "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "remote-work-boom",
+    "date": "2020-07-01",
+    "title": "Remote work boom",
+    "description": "Tech companies embrace permanent remote work, expanding hiring beyond traditional tech hubs. Zoom, Slack, and collaboration tools see explosive growth.",
+    "category": "industry_shift",
+    "impact": "major"
+  },
+  {
+    "id": "pandemic-tech-surge",
+    "date": "2020-10-01",
+    "title": "Pandemic tech hiring surge",
+    "description": "E-commerce, cloud, and digital transformation drive unprecedented tech hiring. Companies like Amazon, Shopify, and Zoom add thousands of employees.",
+    "category": "hiring_boom",
+    "impact": "major"
+  },
+  {
+    "id": "spac-crypto-boom",
+    "date": "2021-03-01",
+    "title": "SPAC and crypto hiring boom",
+    "description": "Speculative investment in SPACs and cryptocurrency drives hiring at fintech and crypto companies. Coinbase goes public; NFT platforms scale engineering teams.",
+    "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "great-resignation",
+    "date": "2021-06-01",
+    "title": "The Great Resignation",
+    "description": "Record numbers of workers quit their jobs seeking better pay, remote work, and work-life balance. Tech quits rates hit historic highs as workers have unprecedented leverage.",
+    "category": "industry_shift",
+    "impact": "major"
+  },
+  {
+    "id": "infrastructure-act",
+    "date": "2021-11-01",
+    "title": "Infrastructure Investment Act",
+    "description": "The $1.2 trillion infrastructure bill includes $65 billion for broadband expansion, creating demand for telecom and network engineering roles.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "fed-rate-hikes",
+    "date": "2022-03-01",
+    "title": "Fed begins rate hike cycle",
+    "description": "The Federal Reserve starts raising interest rates to combat inflation. Higher rates squeeze startup funding, slow growth spending, and trigger a reassessment of tech valuations.",
+    "category": "economic_crisis",
+    "impact": "major"
+  },
+  {
+    "id": "crypto-crash",
+    "date": "2022-06-01",
+    "title": "Crypto market crashes",
+    "description": "Terra/Luna and Three Arrows Capital collapse wipe out billions. Crypto exchanges and Web3 companies begin mass layoffs, with Coinbase cutting 18% of staff.",
+    "category": "tech_layoffs",
+    "impact": "moderate"
+  },
+  {
+    "id": "chips-act",
+    "date": "2022-08-01",
+    "title": "CHIPS and Science Act signed",
+    "description": "The $280 billion law subsidizes domestic semiconductor manufacturing. Intel, TSMC, and Samsung announce major U.S. fab construction, creating future manufacturing and engineering jobs.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "meta-layoffs",
+    "date": "2022-11-01",
+    "title": "Meta lays off 11,000 employees",
+    "description": "Meta cuts 13% of its workforce, the first mass layoff in the company's history. This kicks off a wave of tech layoffs across the industry that will continue into 2023.",
+    "category": "tech_layoffs",
+    "impact": "major"
+  },
+  {
+    "id": "chatgpt-launch",
+    "date": "2022-11-01",
+    "title": "ChatGPT launches",
+    "description": "OpenAI releases ChatGPT, triggering an AI arms race. Every major tech company pivots resources toward generative AI, reshaping hiring priorities across the industry.",
+    "category": "industry_shift",
+    "impact": "major"
+  },
+  {
+    "id": "mass-layoffs-2023",
+    "date": "2023-01-01",
+    "title": "Google, Amazon, Microsoft mass layoffs",
+    "description": "The tech layoff wave peaks as Google cuts 12,000, Amazon cuts 18,000, and Microsoft cuts 10,000. Over 150,000 tech workers are laid off in the first quarter alone.",
+    "category": "tech_layoffs",
+    "impact": "major"
+  },
+  {
+    "id": "svb-collapse",
+    "date": "2023-03-01",
+    "title": "Silicon Valley Bank collapses",
+    "description": "SVB's failure sends shockwaves through the startup ecosystem. Many companies scramble to access payroll funds, briefly threatening a startup employment crisis.",
+    "category": "economic_crisis",
+    "impact": "moderate"
+  },
+  {
+    "id": "ai-hiring-boom",
+    "date": "2023-06-01",
+    "title": "AI hiring boom begins",
+    "description": "Demand for AI/ML engineers, prompt engineers, and AI safety researchers explodes. Companies race to build or integrate large language models, creating a new talent war.",
+    "category": "hiring_boom",
+    "impact": "major"
+  },
+  {
+    "id": "hollywood-strikes",
+    "date": "2023-07-01",
+    "title": "WGA and SAG-AFTRA strikes",
+    "description": "Writers and actors strike over AI usage and streaming residuals. The entertainment industry shutdown affects thousands of tech-adjacent jobs in streaming and content platforms.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "continued-layoffs-2024",
+    "date": "2024-01-01",
+    "title": "Tech layoffs continue into 2024",
+    "description": "Despite a recovering stock market, layoffs continue at Google, Amazon, Discord, Twitch, and others. Companies shift from growth-at-all-costs to efficiency and profitability.",
+    "category": "tech_layoffs",
+    "impact": "moderate"
+  },
+  {
+    "id": "ai-infrastructure-buildout",
+    "date": "2024-06-01",
+    "title": "AI infrastructure buildout accelerates",
+    "description": "Nvidia's market cap surpasses $3 trillion as hyperscalers invest billions in GPU clusters and data centers. Demand for AI infrastructure, MLOps, and data engineering talent surges.",
+    "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "fed-rate-cuts",
+    "date": "2024-09-01",
+    "title": "Fed begins cutting rates",
+    "description": "The Federal Reserve starts lowering interest rates, easing financial conditions for tech companies and startups. Venture capital activity begins to recover.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "trump-tariffs-2025",
+    "date": "2025-02-01",
+    "title": "New tariffs shake tech supply chains",
+    "description": "Broad new tariffs on imports from China and other countries create uncertainty for hardware companies and raise costs for data center buildouts.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "ai-agent-wave",
+    "date": "2025-06-01",
+    "title": "AI agent adoption wave",
+    "description": "Companies deploy AI agents for coding, customer service, and data analysis at scale. The shift creates new roles in AI oversight while automating some traditional software development tasks.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "deepseek-disruption",
+    "date": "2025-01-01",
+    "title": "DeepSeek disrupts AI market",
+    "description": "Chinese AI lab DeepSeek releases competitive open-source models at a fraction of the cost, challenging the dominance of U.S. AI companies and reshaping the competitive landscape.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "gpt3-release",
+    "date": "2020-06-01",
+    "title": "GPT-3 released by OpenAI",
+    "description": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating dramatic capabilities in text generation, translation, and code writing. Sparks widespread discussion about AI replacing knowledge workers.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "dall-e-announced",
+    "date": "2021-01-01",
+    "title": "DALL-E announced",
+    "description": "OpenAI reveals DALL-E, an AI system that creates images from text descriptions. Signals the beginning of generative AI's expansion beyond text into creative fields.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "github-copilot",
+    "date": "2021-06-01",
+    "title": "GitHub Copilot launched",
+    "description": "GitHub and OpenAI launch Copilot, an AI pair programmer that suggests code in real-time. First mainstream AI tool directly targeting software developer workflows.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "stable-diffusion",
+    "date": "2022-08-01",
+    "title": "Stable Diffusion released",
+    "description": "Stability AI releases Stable Diffusion as open source, making powerful image generation accessible to anyone. Triggers a wave of AI art tools and concerns in creative industries.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "chatgpt-launch-ai",
+    "date": "2022-11-01",
+    "title": "ChatGPT launches",
+    "description": "OpenAI releases ChatGPT, reaching 100 million users in two months. Fundamentally shifts public perception of AI capabilities and triggers an industry-wide race to build AI products.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "gpt4-release",
+    "date": "2023-03-01",
+    "title": "GPT-4 released",
+    "description": "OpenAI launches GPT-4 with multimodal capabilities. Passes the bar exam and medical licensing exams. Companies across every sector begin integrating GPT-4 into products.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "claude2-llama2",
+    "date": "2023-07-01",
+    "title": "Claude 2 and Llama 2 released",
+    "description": "Anthropic launches Claude 2 while Meta open-sources Llama 2. The market shifts from OpenAI monopoly to multi-provider competition, expanding AI hiring demand.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "gemini-launch",
+    "date": "2023-12-01",
+    "title": "Google launches Gemini",
+    "description": "Google releases Gemini, its most capable AI model, directly competing with GPT-4. Signals Google's full commitment to the AI race and triggers increased AI hiring across Big Tech.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "claude3-family",
+    "date": "2024-03-01",
+    "title": "Claude 3 model family",
+    "description": "Anthropic releases Claude 3 Opus, Sonnet, and Haiku — a family of models at different capability and price points. Sets new benchmarks in reasoning and analysis.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "gpt4o-release",
+    "date": "2024-05-01",
+    "title": "GPT-4o released",
+    "description": "OpenAI releases GPT-4o with native multimodal capabilities including real-time voice. Makes advanced AI capabilities more accessible through the free tier.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "claude35-sonnet",
+    "date": "2024-06-01",
+    "title": "Claude 3.5 Sonnet released",
+    "description": "Anthropic releases Claude 3.5 Sonnet, matching or exceeding GPT-4o on most benchmarks at lower cost. Becomes the preferred model for many coding and analysis workflows.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "llama31-release",
+    "date": "2024-07-01",
+    "title": "Llama 3.1 405B released",
+    "description": "Meta releases Llama 3.1 with a 405-billion parameter open model competitive with proprietary alternatives. Dramatically expands the open-source AI ecosystem.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "o1-reasoning",
+    "date": "2024-09-01",
+    "title": "OpenAI o1 reasoning model",
+    "description": "OpenAI releases o1, a model that 'thinks before it answers' using chain-of-thought reasoning. Represents a new paradigm in AI architecture focused on deliberate reasoning.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "deepseek-r1",
+    "date": "2025-01-01",
+    "title": "DeepSeek R1 disrupts the market",
+    "description": "Chinese AI lab DeepSeek releases R1, matching frontier model performance at a fraction of the cost. Sends shockwaves through the AI industry and causes a significant Nvidia stock drop.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "claude4-opus",
+    "date": "2025-05-01",
+    "title": "Claude 4 / Opus released",
+    "description": "Anthropic releases Claude 4, setting new standards for agentic AI capabilities. Models can now reliably execute multi-step workflows, accelerating AI agent adoption in enterprises.",
+    "category": "ai_release",
+    "impact": "major"
+  }
+]
