@@ -153,7 +153,7 @@
   },
   {
     "id": "covid-lockdowns",
-    "date": "2020-03-01",
+    "date": "2020-03-15",
     "title": "COVID-19 lockdowns begin",
     "description": "The pandemic triggers the fastest labor market collapse in U.S. history. Tech is hit less than hospitality and retail, but startups freeze hiring and some cut staff.",
     "category": "economic_crisis",
@@ -161,10 +161,18 @@
   },
   {
     "id": "cares-act",
-    "date": "2020-03-01",
-    "title": "CARES Act and PPP loans",
-    "description": "Massive fiscal stimulus helps companies retain workers. The $2 trillion package includes forgivable loans that prevent many tech companies from doing layoffs.",
+    "date": "2020-04-03",
+    "title": "CARES Act and PPP loans launched",
+    "description": "Massive fiscal stimulus helps companies retain workers. The $2 trillion package includes forgivable PPP loans that prevent many tech companies from doing layoffs.",
     "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "gpt3-release",
+    "date": "2020-06-01",
+    "title": "GPT-3 released by OpenAI",
+    "description": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating dramatic capabilities in text generation, translation, and code writing. Sparks widespread discussion about AI replacing knowledge workers.",
+    "category": "ai_release",
     "impact": "major"
   },
   {
@@ -184,11 +192,35 @@
     "impact": "major"
   },
   {
+    "id": "vaccines-authorized",
+    "date": "2020-12-11",
+    "title": "COVID-19 vaccines authorized",
+    "description": "The FDA grants emergency use authorization for the Pfizer-BioNTech vaccine, followed quickly by Moderna. Signals the beginning of economic recovery and a return to in-person work.",
+    "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "dall-e-announced",
+    "date": "2021-01-01",
+    "title": "DALL-E announced",
+    "description": "OpenAI reveals DALL-E, an AI system that creates images from text descriptions. Signals the beginning of generative AI's expansion beyond text into creative fields.",
+    "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
     "id": "spac-crypto-boom",
     "date": "2021-03-01",
     "title": "SPAC and crypto hiring boom",
     "description": "Speculative investment in SPACs and cryptocurrency drives hiring at fintech and crypto companies. Coinbase goes public; NFT platforms scale engineering teams.",
     "category": "hiring_boom",
+    "impact": "moderate"
+  },
+  {
+    "id": "remote-work-permanent",
+    "date": "2021-05-01",
+    "title": "Remote work becomes permanent at major companies",
+    "description": "Google, Facebook, Twitter, and Salesforce announce permanent hybrid or remote work policies. The shift decouples tech hiring from traditional hubs like San Francisco and Seattle.",
+    "category": "industry_shift",
     "impact": "moderate"
   },
   {
@@ -200,6 +232,22 @@
     "impact": "major"
   },
   {
+    "id": "github-copilot",
+    "date": "2021-06-01",
+    "title": "GitHub Copilot launched",
+    "description": "GitHub and OpenAI launch Copilot, an AI pair programmer that suggests code in real-time. First mainstream AI tool directly targeting software developer workflows.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "tech-ipo-boom-peaks",
+    "date": "2021-11-01",
+    "title": "Tech IPO boom peaks",
+    "description": "Rivian, Nubank, and dozens of tech companies go public in the biggest IPO year on record. Sky-high valuations fuel aggressive hiring across startups preparing for their own listings.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
     "id": "infrastructure-act",
     "date": "2021-11-01",
     "title": "Infrastructure Investment Act",
@@ -209,7 +257,7 @@
   },
   {
     "id": "fed-rate-hikes",
-    "date": "2022-03-01",
+    "date": "2022-03-16",
     "title": "Fed begins rate hike cycle",
     "description": "The Federal Reserve starts raising interest rates to combat inflation. Higher rates squeeze startup funding, slow growth spending, and trigger a reassessment of tech valuations.",
     "category": "economic_crisis",
@@ -224,18 +272,26 @@
     "impact": "moderate"
   },
   {
-    "id": "chips-act",
+    "id": "stable-diffusion",
     "date": "2022-08-01",
-    "title": "CHIPS and Science Act signed",
-    "description": "The $280 billion law subsidizes domestic semiconductor manufacturing. Intel, TSMC, and Samsung announce major U.S. fab construction, creating future manufacturing and engineering jobs.",
-    "category": "policy",
+    "title": "Stable Diffusion released",
+    "description": "Stability AI releases Stable Diffusion as open source, making powerful image generation accessible to anyone. Triggers a wave of AI art tools and concerns in creative industries.",
+    "category": "ai_release",
     "impact": "moderate"
   },
   {
-    "id": "meta-layoffs",
-    "date": "2022-11-01",
-    "title": "Meta lays off 11,000 employees",
-    "description": "Meta cuts 13% of its workforce, the first mass layoff in the company's history. This kicks off a wave of tech layoffs across the industry that will continue into 2023.",
+    "id": "chips-act",
+    "date": "2022-08-09",
+    "title": "CHIPS and Science Act signed",
+    "description": "The $280 billion law subsidizes domestic semiconductor manufacturing. Intel, TSMC, and Samsung announce major U.S. fab construction, creating future manufacturing and engineering jobs.",
+    "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "twitter-mass-layoffs",
+    "date": "2022-10-27",
+    "title": "Twitter/X mass layoffs under Musk",
+    "description": "Elon Musk completes his acquisition of Twitter and immediately lays off roughly half of the company's 7,500 employees. Signals a broader industry shift toward leaner tech workforces.",
     "category": "tech_layoffs",
     "impact": "major"
   },
@@ -248,6 +304,22 @@
     "impact": "major"
   },
   {
+    "id": "chatgpt-launch-ai",
+    "date": "2022-11-01",
+    "title": "ChatGPT launches",
+    "description": "OpenAI releases ChatGPT, reaching 100 million users in two months. Fundamentally shifts public perception of AI capabilities and triggers an industry-wide race to build AI products.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "meta-layoffs",
+    "date": "2022-11-09",
+    "title": "Meta lays off 11,000 employees",
+    "description": "Meta cuts 13% of its workforce, the first mass layoff in the company's history. This kicks off a wave of tech layoffs across the industry that will continue into 2023.",
+    "category": "tech_layoffs",
+    "impact": "major"
+  },
+  {
     "id": "mass-layoffs-2023",
     "date": "2023-01-01",
     "title": "Google, Amazon, Microsoft mass layoffs",
@@ -256,12 +328,20 @@
     "impact": "major"
   },
   {
-    "id": "svb-collapse",
+    "id": "gpt4-release",
     "date": "2023-03-01",
+    "title": "GPT-4 released",
+    "description": "OpenAI launches GPT-4 with multimodal capabilities. Passes the bar exam and medical licensing exams. Companies across every sector begin integrating GPT-4 into products.",
+    "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "svb-collapse",
+    "date": "2023-03-10",
     "title": "Silicon Valley Bank collapses",
     "description": "SVB's failure sends shockwaves through the startup ecosystem. Many companies scramble to access payroll funds, briefly threatening a startup employment crisis.",
     "category": "economic_crisis",
-    "impact": "moderate"
+    "impact": "major"
   },
   {
     "id": "ai-hiring-boom",
@@ -280,108 +360,28 @@
     "impact": "moderate"
   },
   {
-    "id": "continued-layoffs-2024",
-    "date": "2024-01-01",
-    "title": "Tech layoffs continue into 2024",
-    "description": "Despite a recovering stock market, layoffs continue at Google, Amazon, Discord, Twitch, and others. Companies shift from growth-at-all-costs to efficiency and profitability.",
-    "category": "tech_layoffs",
-    "impact": "moderate"
-  },
-  {
-    "id": "ai-infrastructure-buildout",
-    "date": "2024-06-01",
-    "title": "AI infrastructure buildout accelerates",
-    "description": "Nvidia's market cap surpasses $3 trillion as hyperscalers invest billions in GPU clusters and data centers. Demand for AI infrastructure, MLOps, and data engineering talent surges.",
-    "category": "hiring_boom",
-    "impact": "moderate"
-  },
-  {
-    "id": "fed-rate-cuts",
-    "date": "2024-09-01",
-    "title": "Fed begins cutting rates",
-    "description": "The Federal Reserve starts lowering interest rates, easing financial conditions for tech companies and startups. Venture capital activity begins to recover.",
-    "category": "policy",
-    "impact": "moderate"
-  },
-  {
-    "id": "trump-tariffs-2025",
-    "date": "2025-02-01",
-    "title": "New tariffs shake tech supply chains",
-    "description": "Broad new tariffs on imports from China and other countries create uncertainty for hardware companies and raise costs for data center buildouts.",
-    "category": "policy",
-    "impact": "moderate"
-  },
-  {
-    "id": "ai-agent-wave",
-    "date": "2025-06-01",
-    "title": "AI agent adoption wave",
-    "description": "Companies deploy AI agents for coding, customer service, and data analysis at scale. The shift creates new roles in AI oversight while automating some traditional software development tasks.",
-    "category": "industry_shift",
-    "impact": "moderate"
-  },
-  {
-    "id": "deepseek-disruption",
-    "date": "2025-01-01",
-    "title": "DeepSeek disrupts AI market",
-    "description": "Chinese AI lab DeepSeek releases competitive open-source models at a fraction of the cost, challenging the dominance of U.S. AI companies and reshaping the competitive landscape.",
-    "category": "industry_shift",
-    "impact": "moderate"
-  },
-  {
-    "id": "gpt3-release",
-    "date": "2020-06-01",
-    "title": "GPT-3 released by OpenAI",
-    "description": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating dramatic capabilities in text generation, translation, and code writing. Sparks widespread discussion about AI replacing knowledge workers.",
-    "category": "ai_release",
-    "impact": "major"
-  },
-  {
-    "id": "dall-e-announced",
-    "date": "2021-01-01",
-    "title": "DALL-E announced",
-    "description": "OpenAI reveals DALL-E, an AI system that creates images from text descriptions. Signals the beginning of generative AI's expansion beyond text into creative fields.",
-    "category": "ai_release",
-    "impact": "moderate"
-  },
-  {
-    "id": "github-copilot",
-    "date": "2021-06-01",
-    "title": "GitHub Copilot launched",
-    "description": "GitHub and OpenAI launch Copilot, an AI pair programmer that suggests code in real-time. First mainstream AI tool directly targeting software developer workflows.",
-    "category": "ai_release",
-    "impact": "major"
-  },
-  {
-    "id": "stable-diffusion",
-    "date": "2022-08-01",
-    "title": "Stable Diffusion released",
-    "description": "Stability AI releases Stable Diffusion as open source, making powerful image generation accessible to anyone. Triggers a wave of AI art tools and concerns in creative industries.",
-    "category": "ai_release",
-    "impact": "moderate"
-  },
-  {
-    "id": "chatgpt-launch-ai",
-    "date": "2022-11-01",
-    "title": "ChatGPT launches",
-    "description": "OpenAI releases ChatGPT, reaching 100 million users in two months. Fundamentally shifts public perception of AI capabilities and triggers an industry-wide race to build AI products.",
-    "category": "ai_release",
-    "impact": "major"
-  },
-  {
-    "id": "gpt4-release",
-    "date": "2023-03-01",
-    "title": "GPT-4 released",
-    "description": "OpenAI launches GPT-4 with multimodal capabilities. Passes the bar exam and medical licensing exams. Companies across every sector begin integrating GPT-4 into products.",
-    "category": "ai_release",
-    "impact": "major"
-  },
-  {
     "id": "claude2-llama2",
     "date": "2023-07-01",
     "title": "Claude 2 and Llama 2 released",
     "description": "Anthropic launches Claude 2 while Meta open-sources Llama 2. The market shifts from OpenAI monopoly to multi-provider competition, expanding AI hiring demand.",
     "category": "ai_release",
     "impact": "major"
+  },
+  {
+    "id": "fed-peak-rate",
+    "date": "2023-07-26",
+    "title": "Fed raises rates to 5.25-5.50% peak",
+    "description": "The Federal Reserve raises its benchmark rate to the highest level in 22 years. The prolonged high-rate environment continues to pressure startup valuations and venture funding.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "ai-safety-executive-order",
+    "date": "2023-10-30",
+    "title": "Executive Order on AI safety",
+    "description": "President Biden signs a sweeping executive order on AI safety requiring safety testing and transparency for powerful AI systems. Creates new compliance demands and AI governance roles across the industry.",
+    "category": "policy",
+    "impact": "moderate"
   },
   {
     "id": "gemini-launch",
@@ -392,6 +392,14 @@
     "impact": "major"
   },
   {
+    "id": "continued-layoffs-2024",
+    "date": "2024-01-01",
+    "title": "Tech layoffs continue into 2024",
+    "description": "Despite a recovering stock market, layoffs continue at Google, Amazon, Discord, Twitch, and others. Companies shift from growth-at-all-costs to efficiency and profitability.",
+    "category": "tech_layoffs",
+    "impact": "moderate"
+  },
+  {
     "id": "claude3-family",
     "date": "2024-03-01",
     "title": "Claude 3 model family",
@@ -400,11 +408,27 @@
     "impact": "major"
   },
   {
+    "id": "eu-ai-act",
+    "date": "2024-03-13",
+    "title": "EU AI Act adopted",
+    "description": "The European Parliament passes the world's first comprehensive AI regulation framework. Companies operating in the EU face new compliance requirements, driving demand for AI governance and policy roles.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
     "id": "gpt4o-release",
     "date": "2024-05-01",
     "title": "GPT-4o released",
     "description": "OpenAI releases GPT-4o with native multimodal capabilities including real-time voice. Makes advanced AI capabilities more accessible through the free tier.",
     "category": "ai_release",
+    "impact": "moderate"
+  },
+  {
+    "id": "ai-infrastructure-buildout",
+    "date": "2024-06-01",
+    "title": "AI infrastructure buildout accelerates",
+    "description": "Nvidia's market cap surpasses $3 trillion as hyperscalers invest billions in GPU clusters and data centers. Demand for AI infrastructure, MLOps, and data engineering talent surges.",
+    "category": "hiring_boom",
     "impact": "moderate"
   },
   {
@@ -432,11 +456,51 @@
     "impact": "major"
   },
   {
-    "id": "deepseek-r1",
+    "id": "fed-rate-cuts",
+    "date": "2024-09-18",
+    "title": "Fed begins cutting rates",
+    "description": "The Federal Reserve starts lowering interest rates, easing financial conditions for tech companies and startups. Venture capital activity begins to recover.",
+    "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "deepseek-disruption",
     "date": "2025-01-01",
+    "title": "DeepSeek disrupts AI market",
+    "description": "Chinese AI lab DeepSeek releases competitive open-source models at a fraction of the cost, challenging the dominance of U.S. AI companies and reshaping the competitive landscape.",
+    "category": "industry_shift",
+    "impact": "moderate"
+  },
+  {
+    "id": "deepseek-r1",
+    "date": "2025-01-20",
     "title": "DeepSeek R1 disrupts the market",
     "description": "Chinese AI lab DeepSeek releases R1, matching frontier model performance at a fraction of the cost. Sends shockwaves through the AI industry and causes a significant Nvidia stock drop.",
     "category": "ai_release",
+    "impact": "major"
+  },
+  {
+    "id": "federal-workforce-reductions",
+    "date": "2025-02-01",
+    "title": "Federal workforce reductions begin",
+    "description": "The DOGE-led government efficiency initiative triggers sweeping federal layoffs and hiring freezes. Tens of thousands of government workers face termination, sending ripple effects through the D.C. economy and federal contracting sector.",
+    "category": "policy",
+    "impact": "major"
+  },
+  {
+    "id": "trump-tariffs-2025",
+    "date": "2025-02-01",
+    "title": "New tariffs shake tech supply chains",
+    "description": "Broad new tariffs on imports from China and other countries create uncertainty for hardware companies and raise costs for data center buildouts.",
+    "category": "policy",
+    "impact": "moderate"
+  },
+  {
+    "id": "tariff-escalation",
+    "date": "2025-04-02",
+    "title": "Tariff escalation on Liberation Day",
+    "description": "Sweeping new reciprocal tariffs take effect, dramatically raising import costs across industries. The escalation roils markets, threatens supply chains, and increases uncertainty for business hiring plans.",
+    "category": "policy",
     "impact": "major"
   },
   {
@@ -446,5 +510,13 @@
     "description": "Anthropic releases Claude 4, setting new standards for agentic AI capabilities. Models can now reliably execute multi-step workflows, accelerating AI agent adoption in enterprises.",
     "category": "ai_release",
     "impact": "major"
+  },
+  {
+    "id": "ai-agent-wave",
+    "date": "2025-06-01",
+    "title": "AI agent adoption wave",
+    "description": "Companies deploy AI agents for coding, customer service, and data analysis at scale. The shift creates new roles in AI oversight while automating some traditional software development tasks.",
+    "category": "industry_shift",
+    "impact": "moderate"
   }
 ]

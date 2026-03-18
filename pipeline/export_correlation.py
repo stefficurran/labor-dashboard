@@ -58,6 +58,7 @@ try:
     layoffs_rows = con.execute("""
         SELECT DATE_TRUNC('month', date) as month, SUM(total_laid_off) as total
         FROM layoffs
+        WHERE country = 'United States'
         GROUP BY 1
         ORDER BY 1
     """).fetchall()

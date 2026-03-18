@@ -3,6 +3,7 @@
 import { useState } from "react";
 import KPICard from "./KPICard";
 import TimeSeriesChart from "./TimeSeriesChart";
+import { IndustryBreakdown, aggregateByRange } from "./IndustryBreakdown";
 
 interface LayoffsTabProps {
   layoffs: any | null;
@@ -24,7 +25,7 @@ export default function LayoffsTab({ layoffs }: LayoffsTabProps) {
     );
   }
 
-  const { monthly, cumulative, by_industry, top_companies } = layoffs;
+  const { monthly, industry_monthly, top_events } = layoffs;
 
   // Determine available year range from data
   const firstYear = monthly?.data?.[0]?.date
@@ -37,8 +38,11 @@ export default function LayoffsTab({ layoffs }: LayoffsTabProps) {
     { label: "1Y", year: 2025 },
   ];
 
-  // KPI calculations (always over full range)
-  const totalLayoffs = cumulative?.data?.at(-1)?.cumulative ?? 0;
+  // KPI calculations
+  const totalLayoffs = monthly?.data?.reduce(
+    (sum: number, d: { total: number }) => sum + d.total,
+    0
+  ) ?? 0;
 
   const peakMonth = monthly?.data?.reduce(
     (max: { total: number; date: string }, d: { total: number; date: string }) =>
@@ -46,14 +50,19 @@ export default function LayoffsTab({ layoffs }: LayoffsTabProps) {
     { total: 0, date: "" }
   );
 
-  const companiesAffected = top_companies?.length ?? 0;
+  // Latest month vs prior month
+  const latestMonth = monthly?.data?.at(-1);
+  const priorMonth = monthly?.data?.at(-2);
+  const momChange = latestMonth && priorMonth
+    ? Math.round(((latestMonth.total - priorMonth.total) / priorMonth.total) * 100)
+    : null;
 
   return (
     <div className="space-y-6">
       {/* KPI row */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <KPICard
-          label="Total Layoffs"
+          label="Total US Layoffs"
           value={totalLayoffs.toLocaleString()}
           subvalue={`Since ${formatDate(monthly?.data?.[0]?.date ?? "")}`}
         />
@@ -64,9 +73,14 @@ export default function LayoffsTab({ layoffs }: LayoffsTabProps) {
           trend="down"
         />
         <KPICard
-          label="Companies Tracked"
-          value={companiesAffected.toLocaleString()}
-          subvalue="Top companies by total layoffs"
+          label="Latest Month"
+          value={latestMonth?.total?.toLocaleString() ?? "—"}
+          subvalue={
+            momChange !== null
+              ? `${momChange > 0 ? "+" : ""}${momChange}% vs prior month`
+              : "—"
+          }
+          trend={momChange !== null ? (momChange > 0 ? "down" : "up") : undefined}
         />
       </div>
 
@@ -94,99 +108,112 @@ export default function LayoffsTab({ layoffs }: LayoffsTabProps) {
           {...monthly}
           type="bar"
           startYear={startYear}
-          explainer="The number of people laid off each month from tech companies tracked by Layoffs.fyi. Spikes often cluster around earnings seasons when companies announce restructuring. This is crowdsourced data — actual numbers may be higher."
+          explainer="Monthly layoffs from US tech companies tracked by Layoffs.fyi. Spikes often cluster around earnings seasons when companies announce restructuring. This is crowdsourced data — actual numbers may be higher."
         />
-        <TimeSeriesChart
-          {...cumulative}
-          type="area"
-          startYear={startYear}
-          explainer="Running total of all tracked tech layoffs. The steeper the curve, the faster layoffs are accumulating. Flat periods mean the pace has slowed."
+        <IndustryBreakdown
+          title="Layoffs by Industry"
+          subtitle="Layoffs.fyi (crowdsourced, US only)"
+          data={aggregateByRange(industry_monthly?.data, industry_monthly?.labels, startYear)}
+          color="#3b82f6"
         />
       </div>
 
-      {/* WARN Act data — only show if it has meaningful data (3+ months) */}
-      {layoffs.warn_monthly?.data?.length >= 3 && (
-        <TimeSeriesChart
-          {...layoffs.warn_monthly}
-          type="bar"
-          startYear={startYear}
-          explainer="Official WARN Act notices filed with state governments. These are legally required for layoffs of 100+ employees. Unlike Layoffs.fyi (crowdsourced tech announcements), WARN covers all industries and is government-sourced. Updated daily."
-        />
+      {/* WARN Act section */}
+      {(layoffs.warn_monthly?.data?.length >= 3 || layoffs.warn_industry?.data?.length >= 3) && (
+        <>
+          <h2 className="text-lg font-semibold text-white pt-2">
+            WARN Act Notices
+            <span className="text-sm font-normal text-gray-400 ml-2">
+              Government-sourced, all industries
+            </span>
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {layoffs.warn_monthly?.data?.length >= 3 && (() => {
+              const warnData = layoffs.warn_monthly.data;
+              const firstDate = formatDate(warnData[0].date);
+              const lastDate = formatDate(warnData[warnData.length - 1].date);
+              return (
+                <TimeSeriesChart
+                  {...layoffs.warn_monthly}
+                  type="bar"
+                  startYear={startYear}
+                  explainer={`Official WARN Act notices filed with state governments. Required for layoffs of 100+ employees. Coverage: ${firstDate} to ${lastDate}.`}
+                />
+              );
+            })()}
+            {layoffs.warn_industry?.labels?.length > 0 && (
+              <IndustryBreakdown
+                title="WARN Notices by Industry"
+                subtitle="Government-sourced, all industries"
+                data={aggregateByRange(layoffs.warn_industry?.data, layoffs.warn_industry?.labels, startYear)}
+                color="#f59e0b"
+              />
+            )}
+          </div>
+        </>
       )}
 
-      {/* Top Industries table */}
-      <div className="rounded-xl bg-gray-900 border border-gray-800 overflow-hidden">
-        <div className="px-5 py-4 border-b border-gray-800">
-          <h3 className="text-lg font-semibold text-white">Top Industries</h3>
-          <p className="text-sm text-gray-400">Industries with the most tracked layoffs</p>
+      {/* Top layoff events — individual rounds with dates */}
+      {top_events?.length > 0 && (
+        <div className="rounded-xl bg-gray-900 border border-gray-800 overflow-hidden">
+          <div className="px-5 py-4 border-b border-gray-800">
+            <h3 className="text-lg font-semibold text-white">Largest Layoff Events (US)</h3>
+            <p className="text-sm text-gray-400">
+              Individual layoff rounds ranked by size — Layoffs.fyi
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-800 text-gray-400">
+                  <th className="text-left px-5 py-3 font-medium">#</th>
+                  <th className="text-left px-5 py-3 font-medium">Company</th>
+                  <th className="text-left px-5 py-3 font-medium">Date</th>
+                  <th className="text-left px-5 py-3 font-medium">Industry</th>
+                  <th className="text-right px-5 py-3 font-medium">Laid Off</th>
+                  <th className="text-right px-5 py-3 font-medium">% of Co.</th>
+                </tr>
+              </thead>
+              <tbody>
+                {top_events.map(
+                  (
+                    row: {
+                      company: string;
+                      date: string;
+                      laid_off: number;
+                      industry: string | null;
+                      percentage: number | null;
+                    },
+                    i: number
+                  ) => (
+                    <tr
+                      key={`${row.company}-${row.date}`}
+                      className="border-b border-gray-800/50 hover:bg-gray-800/30 transition-colors"
+                    >
+                      <td className="px-5 py-3 text-gray-500">{i + 1}</td>
+                      <td className="px-5 py-3 font-medium text-white">
+                        {row.company}
+                      </td>
+                      <td className="px-5 py-3 text-gray-400">
+                        {formatDate(row.date)}
+                      </td>
+                      <td className="px-5 py-3 text-gray-400">
+                        {row.industry ?? "—"}
+                      </td>
+                      <td className="px-5 py-3 text-right text-gray-300">
+                        {row.laid_off.toLocaleString()}
+                      </td>
+                      <td className="px-5 py-3 text-right text-gray-400">
+                        {row.percentage ? `${row.percentage}%` : "—"}
+                      </td>
+                    </tr>
+                  )
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-gray-800 text-gray-400">
-                <th className="text-left px-5 py-3 font-medium">#</th>
-                <th className="text-left px-5 py-3 font-medium">Industry</th>
-                <th className="text-right px-5 py-3 font-medium">Total Laid Off</th>
-                <th className="text-right px-5 py-3 font-medium">Companies</th>
-              </tr>
-            </thead>
-            <tbody>
-              {by_industry?.slice(0, 10).map(
-                (row: { industry: string; total: number; companies: number }, i: number) => (
-                  <tr
-                    key={row.industry}
-                    className="border-b border-gray-800/50 hover:bg-gray-800/30 transition-colors"
-                  >
-                    <td className="px-5 py-3 text-gray-500">{i + 1}</td>
-                    <td className="px-5 py-3 font-medium text-white">{row.industry}</td>
-                    <td className="px-5 py-3 text-right text-gray-300">
-                      {row.total.toLocaleString()}
-                    </td>
-                    <td className="px-5 py-3 text-right text-gray-400">{row.companies}</td>
-                  </tr>
-                )
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Top Companies table */}
-      <div className="rounded-xl bg-gray-900 border border-gray-800 overflow-hidden">
-        <div className="px-5 py-4 border-b border-gray-800">
-          <h3 className="text-lg font-semibold text-white">Top Companies</h3>
-          <p className="text-sm text-gray-400">Companies with the largest total layoffs</p>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-gray-800 text-gray-400">
-                <th className="text-left px-5 py-3 font-medium">#</th>
-                <th className="text-left px-5 py-3 font-medium">Company</th>
-                <th className="text-right px-5 py-3 font-medium">Total Laid Off</th>
-                <th className="text-right px-5 py-3 font-medium">Rounds</th>
-              </tr>
-            </thead>
-            <tbody>
-              {top_companies?.slice(0, 15).map(
-                (row: { company: string; total: number; rounds: number }, i: number) => (
-                  <tr
-                    key={row.company}
-                    className="border-b border-gray-800/50 hover:bg-gray-800/30 transition-colors"
-                  >
-                    <td className="px-5 py-3 text-gray-500">{i + 1}</td>
-                    <td className="px-5 py-3 font-medium text-white">{row.company}</td>
-                    <td className="px-5 py-3 text-right text-gray-300">
-                      {row.total.toLocaleString()}
-                    </td>
-                    <td className="px-5 py-3 text-right text-gray-400">{row.rounds}</td>
-                  </tr>
-                )
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

@@ -21,7 +21,7 @@ load_dotenv()
 DB_PATH = "../data/labor.duckdb"
 BASE_URL = "https://warnfirehose.com"
 PAGE_LIMIT = 100  # Starter tier allows 100 per request
-START_DATE = "2020-01-01"
+START_DATE = "2025-01-01"  # Starter tier only has ~1 year of history
 MAX_REQUESTS = 195  # Stay under the 200/day limit with some buffer
 
 
@@ -160,12 +160,33 @@ def _dry_run():
     else:
         print(f"  Phase 1: Initial fetch from {START_DATE} (newest first, max 50 requests)")
 
-    if max_date and str(min_date) > START_DATE:
-        print(f"  Phase 2: Backfill {START_DATE} to {min_date} with remaining budget")
-    elif not max_date:
-        print(f"  Phase 2: Backfill with remaining budget")
+    # Detect gaps
+    if existing_count > 0:
+        gap = con.execute("""
+            WITH monthly AS (
+                SELECT DATE_TRUNC('month', notice_date) as m, COUNT(*) as cnt
+                FROM warn_notices GROUP BY m
+            ),
+            all_months AS (
+                SELECT UNNEST(generate_series(
+                    (SELECT MIN(m) FROM monthly),
+                    (SELECT MAX(m) FROM monthly),
+                    INTERVAL '1 month'
+                )) as m
+            )
+            SELECT a.m FROM all_months a
+            LEFT JOIN monthly b ON a.m = b.m
+            WHERE b.cnt IS NULL
+            ORDER BY a.m
+        """).fetchall()
+        if gap:
+            print(f"  Phase 2: Fill {len(gap)} empty months ({gap[0][0].strftime('%Y-%m')} to {gap[-1][0].strftime('%Y-%m')})")
+        elif str(min_date) > START_DATE:
+            print(f"  Phase 2: Backfill {START_DATE} to {min_date}")
+        else:
+            print(f"  Phase 2: No gaps — full coverage from {START_DATE}")
     else:
-        print(f"  Phase 2: No gap — full coverage from {START_DATE}")
+        print(f"  Phase 2: Backfill with remaining budget")
 
     # 5. Connectivity check (HEAD request, doesn't count against rate limit)
     try:
@@ -246,17 +267,37 @@ def main():
         budget -= used
         print(f"  +{inserted} records ({used} requests)")
 
-    # === Phase 2: Backfill older data with remaining budget ===
+    # === Phase 2: Fill gaps in coverage with remaining budget ===
+    # Detect gaps by finding months with zero records between min and max date
     if budget > 0:
-        current_min = con.execute("SELECT MIN(notice_date) FROM warn_notices").fetchone()[0]
-        if current_min and str(current_min) > START_DATE:
-            print(f"\nPhase 2: Backfilling before {current_min} ({budget} requests remaining)...")
+        gap = con.execute("""
+            WITH monthly AS (
+                SELECT DATE_TRUNC('month', notice_date) as m, COUNT(*) as cnt
+                FROM warn_notices GROUP BY m
+            ),
+            all_months AS (
+                SELECT UNNEST(generate_series(
+                    (SELECT MIN(m) FROM monthly),
+                    (SELECT MAX(m) FROM monthly),
+                    INTERVAL '1 month'
+                )) as m
+            )
+            SELECT a.m FROM all_months a
+            LEFT JOIN monthly b ON a.m = b.m
+            WHERE b.cnt IS NULL
+            ORDER BY a.m
+        """).fetchall()
+
+        if gap:
+            gap_start = gap[0][0].strftime("%Y-%m-%d")
+            gap_end = gap[-1][0].strftime("%Y-%m-%d")
+            print(f"\nPhase 2: Filling gap {gap_start} to {gap_end} ({len(gap)} empty months, {budget} requests remaining)...")
             inserted, used = _ingest_range(
                 api_key, con,
-                date_from=START_DATE,
-                date_to=str(current_min),
-                order="desc",  # Newest-first within backfill range (get closer to existing data)
-                label="backfill",
+                date_from=gap_start,
+                date_to=gap_end,
+                order="asc",
+                label="gap-fill",
                 budget=budget,
             )
             total_inserted += inserted
@@ -264,9 +305,28 @@ def main():
             if inserted > 0:
                 print(f"  +{inserted} records ({used} requests)")
             else:
-                print(f"  Backfill complete! ({used} requests)")
+                print(f"  No records found in gap ({used} requests)")
         else:
-            print(f"\nPhase 2: No gap to backfill — full coverage from {START_DATE}")
+            # Check if we need to backfill before our earliest record
+            current_min = con.execute("SELECT MIN(notice_date) FROM warn_notices").fetchone()[0]
+            if current_min and str(current_min) > START_DATE:
+                print(f"\nPhase 2: Backfilling before {current_min} ({budget} requests remaining)...")
+                inserted, used = _ingest_range(
+                    api_key, con,
+                    date_from=START_DATE,
+                    date_to=str(current_min),
+                    order="desc",
+                    label="backfill",
+                    budget=budget,
+                )
+                total_inserted += inserted
+                budget -= used
+                if inserted > 0:
+                    print(f"  +{inserted} records ({used} requests)")
+                else:
+                    print(f"  Backfill complete! ({used} requests)")
+            else:
+                print(f"\nPhase 2: No gaps — full coverage from {START_DATE}")
 
     # Summary
     final_count = con.execute("SELECT COUNT(*) FROM warn_notices").fetchone()[0]

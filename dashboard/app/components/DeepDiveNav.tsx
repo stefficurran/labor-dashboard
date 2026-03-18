@@ -10,19 +10,16 @@ const GROUPS: { label: string; items: NavItem[] }[] = [
   {
     label: "Labor & Markets",
     items: [
-      { href: "/tech", title: "Tech Sector", description: "Employment, JOLTS, openings/hires ratio, quits rate" },
+      { href: "/tech", title: "Tech Sector", description: "Employment, JOLTS, layoffs, openings/hires ratio, quits rate" },
       { href: "/growth", title: "Growing Markets", description: "17-sector rankings, indexed comparisons" },
-      { href: "/market", title: "Stock Market", description: "S&P 500, NASDAQ, employment overlays" },
-      { href: "/layoffs", title: "Layoffs", description: "Tech layoff trends by company and industry" },
-      { href: "/correlation", title: "Cross-Source", description: "Market vs employment, layoffs vs JOLTS" },
+      { href: "/market", title: "Stock Market", description: "Stock indices, employment overlay, market-employment correlations" },
     ],
   },
   {
     label: "AI",
     items: [
       { href: "/ai", title: "AI Across Industries", description: "Job trends, investment, sector adoption" },
-      { href: "/ai-impact", title: "AI Release Impact", description: "How model releases move markets" },
-      { href: "/news", title: "News & Events", description: "Historical timeline, live news search" },
+      { href: "/events", title: "Events & Impact", description: "Event timeline, AI release impact, live news" },
     ],
   },
   {

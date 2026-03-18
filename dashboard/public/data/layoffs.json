@@ -1,495 +1,1157 @@
 {
   "monthly": {
-    "title": "Monthly Tech Layoffs",
-    "subtitle": "Total employees laid off per month",
+    "title": "Monthly Tech Layoffs (US)",
+    "subtitle": "Total employees laid off per month \u2014 Layoffs.fyi (crowdsourced)",
     "labels": [
       "total"
     ],
     "data": [
       {
+        "date": "2020-03-01",
+        "total": 7850
+      },
+      {
+        "date": "2020-04-01",
+        "total": 19802
+      },
+      {
+        "date": "2020-05-01",
+        "total": 14674
+      },
+      {
+        "date": "2020-06-01",
+        "total": 3926
+      },
+      {
+        "date": "2020-07-01",
+        "total": 1612
+      },
+      {
+        "date": "2020-08-01",
+        "total": 1456
+      },
+      {
+        "date": "2020-09-01",
+        "total": 567
+      },
+      {
+        "date": "2020-10-01",
+        "total": 110
+      },
+      {
+        "date": "2020-11-01",
+        "total": 232
+      },
+      {
+        "date": "2020-12-01",
+        "total": 132
+      },
+      {
+        "date": "2021-01-01",
+        "total": 3172
+      },
+      {
+        "date": "2021-02-01",
+        "total": 336
+      },
+      {
+        "date": "2021-03-01",
+        "total": 47
+      },
+      {
+        "date": "2021-04-01",
+        "total": 261
+      },
+      {
+        "date": "2021-06-01",
+        "total": 2434
+      },
+      {
+        "date": "2021-08-01",
+        "total": 67
+      },
+      {
+        "date": "2021-09-01",
+        "total": 161
+      },
+      {
+        "date": "2021-10-01",
+        "total": 22
+      },
+      {
+        "date": "2021-11-01",
+        "total": 2070
+      },
+      {
+        "date": "2021-12-01",
+        "total": 900
+      },
+      {
+        "date": "2022-01-01",
+        "total": 510
+      },
+      {
+        "date": "2022-02-01",
+        "total": 3147
+      },
+      {
+        "date": "2022-03-01",
+        "total": 4105
+      },
+      {
+        "date": "2022-04-01",
+        "total": 1958
+      },
+      {
+        "date": "2022-05-01",
+        "total": 6267
+      },
+      {
+        "date": "2022-06-01",
+        "total": 9281
+      },
+      {
+        "date": "2022-07-01",
+        "total": 8712
+      },
+      {
+        "date": "2022-08-01",
+        "total": 9760
+      },
+      {
+        "date": "2022-09-01",
+        "total": 3176
+      },
+      {
+        "date": "2022-10-01",
+        "total": 10246
+      },
+      {
+        "date": "2022-11-01",
+        "total": 45476
+      },
+      {
+        "date": "2022-12-01",
+        "total": 5573
+      },
+      {
         "date": "2023-01-01",
-        "total": 13462
+        "total": 69369
       },
       {
         "date": "2023-02-01",
-        "total": 11710
+        "total": 24921
       },
       {
         "date": "2023-03-01",
-        "total": 11043
+        "total": 29895
       },
       {
         "date": "2023-04-01",
-        "total": 14943
+        "total": 8137
       },
       {
         "date": "2023-05-01",
-        "total": 9300
+        "total": 9184
       },
       {
         "date": "2023-06-01",
-        "total": 6932
+        "total": 6302
       },
       {
         "date": "2023-07-01",
-        "total": 5627
+        "total": 5400
       },
       {
         "date": "2023-08-01",
-        "total": 6526
+        "total": 4750
       },
       {
         "date": "2023-09-01",
-        "total": 3402
+        "total": 3668
       },
       {
         "date": "2023-10-01",
-        "total": 4830
+        "total": 6450
       },
       {
         "date": "2023-11-01",
-        "total": 5195
+        "total": 6815
       },
       {
         "date": "2023-12-01",
-        "total": 4152
+        "total": 3664
       },
       {
         "date": "2024-01-01",
-        "total": 7699
+        "total": 21390
       },
       {
         "date": "2024-02-01",
-        "total": 4428
+        "total": 12685
       },
       {
         "date": "2024-03-01",
-        "total": 1242
+        "total": 6898
       },
       {
         "date": "2024-04-01",
-        "total": 6248
+        "total": 16688
       },
       {
         "date": "2024-05-01",
-        "total": 7886
+        "total": 6581
       },
       {
         "date": "2024-06-01",
-        "total": 7397
+        "total": 4148
       },
       {
         "date": "2024-07-01",
-        "total": 4691
+        "total": 6435
       },
       {
         "date": "2024-08-01",
-        "total": 1600
+        "total": 22467
       },
       {
         "date": "2024-09-01",
-        "total": 2949
+        "total": 1470
       },
       {
         "date": "2024-10-01",
-        "total": 2740
+        "total": 2761
       },
       {
         "date": "2024-11-01",
-        "total": 2301
+        "total": 4457
       },
       {
         "date": "2024-12-01",
-        "total": 988
+        "total": 362
       },
       {
         "date": "2025-01-01",
-        "total": 1227
+        "total": 994
       },
       {
         "date": "2025-02-01",
-        "total": 4141
+        "total": 17629
       },
       {
         "date": "2025-03-01",
-        "total": 587
+        "total": 4327
+      },
+      {
+        "date": "2025-04-01",
+        "total": 23835
+      },
+      {
+        "date": "2025-05-01",
+        "total": 7338
+      },
+      {
+        "date": "2025-06-01",
+        "total": 901
+      },
+      {
+        "date": "2025-07-01",
+        "total": 15937
+      },
+      {
+        "date": "2025-08-01",
+        "total": 5725
+      },
+      {
+        "date": "2025-09-01",
+        "total": 1554
+      },
+      {
+        "date": "2025-10-01",
+        "total": 18440
+      },
+      {
+        "date": "2025-11-01",
+        "total": 6715
+      },
+      {
+        "date": "2025-12-01",
+        "total": 492
+      },
+      {
+        "date": "2026-01-01",
+        "total": 20123
+      },
+      {
+        "date": "2026-02-01",
+        "total": 5872
+      },
+      {
+        "date": "2026-03-01",
+        "total": 370
       }
     ]
   },
-  "cumulative": {
-    "title": "Cumulative Layoffs",
-    "subtitle": "Running total since March 2020",
+  "industry_monthly": {
+    "title": "Layoffs by Industry Over Time",
+    "subtitle": "Monthly layoffs for top industries \u2014 Layoffs.fyi (crowdsourced, US only)",
     "labels": [
-      "cumulative"
+      "Hardware",
+      "Retail",
+      "Consumer",
+      "Other",
+      "Transportation",
+      "Finance",
+      "Healthcare",
+      "Infrastructure"
     ],
     "data": [
       {
+        "date": "2020-03-01",
+        "Finance": 64,
+        "Infrastructure": 50,
+        "Retail": 641,
+        "Consumer": 590,
+        "Other": 43,
+        "Transportation": 766
+      },
+      {
+        "date": "2020-04-01",
+        "Finance": 1229,
+        "Infrastructure": 70,
+        "Retail": 3747,
+        "Transportation": 1782,
+        "Consumer": 3208,
+        "Other": 290,
+        "Healthcare": 684
+      },
+      {
+        "date": "2020-05-01",
+        "Finance": 376,
+        "Healthcare": 70,
+        "Other": 50,
+        "Infrastructure": 57,
+        "Retail": 689,
+        "Consumer": 1180,
+        "Transportation": 7604
+      },
+      {
+        "date": "2020-06-01",
+        "Healthcare": 44,
+        "Infrastructure": 20,
+        "Consumer": 186,
+        "Transportation": 80,
+        "Retail": 1464,
+        "Finance": 922
+      },
+      {
+        "date": "2020-07-01",
+        "Retail": 87,
+        "Consumer": 68,
+        "Finance": 107
+      },
+      {
+        "date": "2020-08-01",
+        "Retail": 150,
+        "Consumer": 250
+      },
+      {
+        "date": "2020-09-01",
+        "Transportation": 30,
+        "Healthcare": 47
+      },
+      {
+        "date": "2020-10-01",
+        "Healthcare": 82
+      },
+      {
+        "date": "2020-11-01",
+        "Retail": 30,
+        "Healthcare": 172
+      },
+      {
+        "date": "2021-01-01",
+        "Retail": 800,
+        "Other": 315
+      },
+      {
+        "date": "2021-02-01",
+        "Retail": 243,
+        "Other": 80
+      },
+      {
+        "date": "2021-04-01",
+        "Infrastructure": 160
+      },
+      {
+        "date": "2021-09-01",
+        "Other": 120
+      },
+      {
+        "date": "2022-01-01",
+        "Consumer": 80,
+        "Finance": 330
+      },
+      {
+        "date": "2022-02-01",
+        "Transportation": 111
+      },
+      {
+        "date": "2022-03-01",
+        "Healthcare": 250,
+        "Retail": 190
+      },
+      {
+        "date": "2022-04-01",
+        "Transportation": 100,
+        "Healthcare": 539,
+        "Finance": 592
+      },
+      {
+        "date": "2022-05-01",
+        "Healthcare": 86,
+        "Retail": 40,
+        "Other": 60,
+        "Infrastructure": 50,
+        "Transportation": 3520,
+        "Consumer": 277,
+        "Finance": 1014
+      },
+      {
+        "date": "2022-06-01",
+        "Other": 273,
+        "Consumer": 188,
+        "Healthcare": 781,
+        "Transportation": 189,
+        "Finance": 485,
+        "Infrastructure": 140,
+        "Retail": 960
+      },
+      {
+        "date": "2022-07-01",
+        "Transportation": 1178,
+        "Consumer": 12,
+        "Infrastructure": 15,
+        "Other": 140,
+        "Finance": 343,
+        "Healthcare": 1803,
+        "Retail": 23
+      },
+      {
+        "date": "2022-08-01",
+        "Retail": 1605,
+        "Consumer": 1683,
+        "Infrastructure": 380,
+        "Other": 215,
+        "Finance": 1398,
+        "Healthcare": 2010,
+        "Transportation": 337
+      },
+      {
+        "date": "2022-09-01",
+        "Other": 800,
+        "Transportation": 78,
+        "Infrastructure": 40,
+        "Healthcare": 451
+      },
+      {
+        "date": "2022-10-01",
+        "Infrastructure": 96,
+        "Transportation": 173,
+        "Healthcare": 1119,
+        "Hardware": 3000,
+        "Retail": 290,
+        "Consumer": 65,
+        "Finance": 781
+      },
+      {
+        "date": "2022-11-01",
+        "Retail": 10090,
+        "Hardware": 251,
+        "Infrastructure": 4100,
+        "Finance": 2120,
+        "Healthcare": 1378,
+        "Other": 821,
+        "Consumer": 15215,
+        "Transportation": 2784
+      },
+      {
+        "date": "2022-12-01",
+        "Retail": 180,
+        "Hardware": 354,
+        "Healthcare": 171,
+        "Consumer": 255,
+        "Finance": 1046,
+        "Transportation": 659,
+        "Other": 255,
+        "Infrastructure": 130
+      },
+      {
         "date": "2023-01-01",
-        "cumulative": 13462
+        "Consumer": 12239,
+        "Hardware": 10343,
+        "Retail": 11015,
+        "Other": 11372,
+        "Infrastructure": 92,
+        "Finance": 4531,
+        "Healthcare": 2056,
+        "Transportation": 575
       },
       {
         "date": "2023-02-01",
-        "cumulative": 25172
+        "Consumer": 2584,
+        "Retail": 1227,
+        "Hardware": 9050,
+        "Finance": 1011,
+        "Other": 4385,
+        "Infrastructure": 250,
+        "Healthcare": 1064,
+        "Transportation": 340
       },
       {
         "date": "2023-03-01",
-        "cumulative": 36215
+        "Finance": 354,
+        "Transportation": 1785,
+        "Consumer": 10780,
+        "Healthcare": 1123,
+        "Hardware": 830,
+        "Retail": 9391,
+        "Other": 500
       },
       {
         "date": "2023-04-01",
-        "cumulative": 51158
+        "Healthcare": 958,
+        "Finance": 364,
+        "Transportation": 1192,
+        "Other": 2959,
+        "Infrastructure": 40
       },
       {
         "date": "2023-05-01",
-        "cumulative": 60458
+        "Other": 1082,
+        "Transportation": 340,
+        "Infrastructure": 40,
+        "Retail": 101,
+        "Finance": 250,
+        "Healthcare": 3270
       },
       {
         "date": "2023-06-01",
-        "cumulative": 67390
+        "Retail": 35,
+        "Hardware": 295,
+        "Infrastructure": 464,
+        "Consumer": 220,
+        "Other": 670,
+        "Finance": 861,
+        "Transportation": 572,
+        "Healthcare": 550
       },
       {
         "date": "2023-07-01",
-        "cumulative": 73017
+        "Consumer": 80,
+        "Other": 1122,
+        "Transportation": 52,
+        "Hardware": 98,
+        "Retail": 735,
+        "Finance": 195,
+        "Healthcare": 107
       },
       {
         "date": "2023-08-01",
-        "cumulative": 79543
+        "Transportation": 20,
+        "Finance": 245,
+        "Other": 878,
+        "Retail": 54,
+        "Consumer": 37,
+        "Hardware": 164,
+        "Healthcare": 442
       },
       {
         "date": "2023-09-01",
-        "cumulative": 82945
+        "Healthcare": 320,
+        "Infrastructure": 350,
+        "Finance": 128,
+        "Transportation": 17,
+        "Retail": 24,
+        "Other": 75,
+        "Consumer": 1145
       },
       {
         "date": "2023-10-01",
-        "cumulative": 87775
+        "Other": 888,
+        "Healthcare": 257,
+        "Retail": 668,
+        "Hardware": 1828,
+        "Consumer": 40,
+        "Finance": 564
       },
       {
         "date": "2023-11-01",
-        "cumulative": 92970
+        "Transportation": 128,
+        "Consumer": 20,
+        "Retail": 630,
+        "Other": 1065,
+        "Healthcare": 84,
+        "Finance": 185,
+        "Infrastructure": 2837
       },
       {
         "date": "2023-12-01",
-        "cumulative": 97122
+        "Consumer": 40,
+        "Hardware": 311,
+        "Retail": 1064,
+        "Transportation": 1070,
+        "Finance": 160,
+        "Other": 109,
+        "Healthcare": 235
       },
       {
         "date": "2024-01-01",
-        "cumulative": 104821
+        "Retail": 2942,
+        "Hardware": 3010,
+        "Healthcare": 418,
+        "Infrastructure": 1000,
+        "Transportation": 848,
+        "Consumer": 3000,
+        "Finance": 3881,
+        "Other": 3729
       },
       {
         "date": "2024-02-01",
-        "cumulative": 109249
+        "Retail": 608,
+        "Healthcare": 566,
+        "Infrastructure": 4250,
+        "Other": 200,
+        "Consumer": 2710,
+        "Finance": 180
       },
       {
         "date": "2024-03-01",
-        "cumulative": 110491
+        "Healthcare": 150,
+        "Infrastructure": 80,
+        "Transportation": 140,
+        "Consumer": 81,
+        "Hardware": 6000,
+        "Finance": 157
       },
       {
         "date": "2024-04-01",
-        "cumulative": 116739
+        "Transportation": 14600,
+        "Other": 49,
+        "Consumer": 579,
+        "Healthcare": 180,
+        "Hardware": 676
       },
       {
         "date": "2024-05-01",
-        "cumulative": 124625
+        "Transportation": 1360,
+        "Other": 136,
+        "Healthcare": 410,
+        "Finance": 152,
+        "Infrastructure": 33,
+        "Consumer": 1453
       },
       {
         "date": "2024-06-01",
-        "cumulative": 132022
+        "Other": 1000,
+        "Transportation": 1000,
+        "Finance": 414,
+        "Healthcare": 543
       },
       {
         "date": "2024-07-01",
-        "cumulative": 136713
+        "Other": 420,
+        "Consumer": 295,
+        "Finance": 1800,
+        "Retail": 60
       },
       {
         "date": "2024-08-01",
-        "cumulative": 138313
+        "Hardware": 15100,
+        "Healthcare": 481,
+        "Consumer": 451,
+        "Other": 220,
+        "Infrastructure": 5600
       },
       {
         "date": "2024-09-01",
-        "cumulative": 141262
+        "Retail": 79,
+        "Infrastructure": 40,
+        "Transportation": 30,
+        "Other": 650,
+        "Finance": 58
       },
       {
         "date": "2024-10-01",
-        "cumulative": 144002
+        "Other": 802,
+        "Transportation": 130,
+        "Consumer": 500
       },
       {
         "date": "2024-11-01",
-        "cumulative": 146303
+        "Other": 384,
+        "Consumer": 105,
+        "Hardware": 1000,
+        "Healthcare": 550
       },
       {
         "date": "2024-12-01",
-        "cumulative": 147291
+        "Other": 70,
+        "Transportation": 20,
+        "Finance": 88
       },
       {
         "date": "2025-01-01",
-        "cumulative": 148518
+        "Retail": 122,
+        "Finance": 337
       },
       {
         "date": "2025-02-01",
-        "cumulative": 152659
+        "Other": 1540,
+        "Consumer": 3950,
+        "Retail": 70,
+        "Hardware": 4058,
+        "Finance": 495,
+        "Transportation": 1000
       },
       {
         "date": "2025-03-01",
-        "cumulative": 153246
+        "Other": 68,
+        "Finance": 931,
+        "Hardware": 2500
+      },
+      {
+        "date": "2025-04-01",
+        "Transportation": 150,
+        "Hardware": 22000,
+        "Consumer": 407,
+        "Other": 281
+      },
+      {
+        "date": "2025-05-01",
+        "Retail": 100,
+        "Consumer": 325,
+        "Other": 6000,
+        "Healthcare": 165
+      },
+      {
+        "date": "2025-06-01",
+        "Other": 305,
+        "Consumer": 340,
+        "Transportation": 140
+      },
+      {
+        "date": "2025-07-01",
+        "Other": 9166,
+        "Healthcare": 35,
+        "Hardware": 5100
+      },
+      {
+        "date": "2025-08-01",
+        "Infrastructure": 221,
+        "Other": 390,
+        "Hardware": 300,
+        "Consumer": 208
+      },
+      {
+        "date": "2025-09-01",
+        "Transportation": 200,
+        "Other": 397
+      },
+      {
+        "date": "2025-10-01",
+        "Retail": 14000,
+        "Hardware": 247,
+        "Healthcare": 60,
+        "Consumer": 775,
+        "Finance": 50,
+        "Transportation": 600,
+        "Other": 120
+      },
+      {
+        "date": "2025-11-01",
+        "Other": 2102,
+        "Hardware": 4052,
+        "Finance": 341
+      },
+      {
+        "date": "2025-12-01",
+        "Consumer": 24,
+        "Finance": 60,
+        "Retail": 84
+      },
+      {
+        "date": "2026-01-01",
+        "Other": 1000,
+        "Finance": 100,
+        "Consumer": 2550,
+        "Retail": 16000
+      },
+      {
+        "date": "2026-02-01",
+        "Retail": 50,
+        "Finance": 4000,
+        "Transportation": 226
+      },
+      {
+        "date": "2026-03-01",
+        "Other": 49,
+        "Transportation": 296
       }
     ]
   },
-  "by_industry": [
+  "top_events": [
     {
-      "industry": "Food",
-      "total": 26009,
-      "companies": 77
-    },
-    {
-      "industry": "Finance",
-      "total": 14643,
-      "companies": 169
-    },
-    {
-      "industry": "Retail",
-      "total": 12829,
-      "companies": 101
-    },
-    {
-      "industry": "Consumer",
-      "total": 12181,
-      "companies": 71
-    },
-    {
-      "industry": "Healthcare",
-      "total": 10944,
-      "companies": 102
-    },
-    {
-      "industry": "Other",
-      "total": 8483,
-      "companies": 84
-    },
-    {
-      "industry": "HR",
-      "total": 8102,
-      "companies": 40
-    },
-    {
-      "industry": "Education",
-      "total": 7409,
-      "companies": 48
-    },
-    {
-      "industry": "Transportation",
-      "total": 7082,
-      "companies": 54
-    },
-    {
-      "industry": "Crypto",
-      "total": 5038,
-      "companies": 65
-    },
-    {
-      "industry": "Marketing",
-      "total": 4880,
-      "companies": 52
-    },
-    {
-      "industry": "Manufacturing",
-      "total": 4687,
-      "companies": 12
-    },
-    {
-      "industry": "Infrastructure",
-      "total": 4207,
-      "companies": 22
-    },
-    {
-      "industry": "Media",
-      "total": 3731,
-      "companies": 45
-    },
-    {
-      "industry": "Security",
-      "total": 2627,
-      "companies": 47
-    },
-    {
-      "industry": "Logistics",
-      "total": 2624,
-      "companies": 23
-    },
-    {
-      "industry": "Recruiting",
-      "total": 2579,
-      "companies": 17
-    },
-    {
-      "industry": "Data",
-      "total": 2463,
-      "companies": 33
-    },
-    {
-      "industry": "Energy",
-      "total": 2448,
-      "companies": 15
-    },
-    {
-      "industry": "Travel",
-      "total": 1625,
-      "companies": 17
-    },
-    {
-      "industry": "Real Estate",
-      "total": 1463,
-      "companies": 34
-    },
-    {
+      "company": "Intel",
+      "date": "2025-04-23",
+      "laid_off": 22000,
       "industry": "Hardware",
-      "total": 1262,
-      "companies": 17
+      "percentage": 20
     },
     {
-      "industry": "Aerospace",
-      "total": 1185,
-      "companies": 7
+      "company": "Amazon",
+      "date": "2026-01-28",
+      "laid_off": 16000,
+      "industry": "Retail",
+      "percentage": null
     },
     {
+      "company": "Intel",
+      "date": "2024-08-01",
+      "laid_off": 15000,
+      "industry": "Hardware",
+      "percentage": 15
+    },
+    {
+      "company": "Tesla",
+      "date": "2024-04-15",
+      "laid_off": 14000,
+      "industry": "Transportation",
+      "percentage": 10
+    },
+    {
+      "company": "Amazon",
+      "date": "2025-10-27",
+      "laid_off": 14000,
+      "industry": "Retail",
+      "percentage": 1
+    },
+    {
+      "company": "Google",
+      "date": "2023-01-20",
+      "laid_off": 12000,
+      "industry": "Consumer",
+      "percentage": 6
+    },
+    {
+      "company": "Meta",
+      "date": "2022-11-09",
+      "laid_off": 11000,
+      "industry": "Consumer",
+      "percentage": 13
+    },
+    {
+      "company": "Meta",
+      "date": "2023-03-14",
+      "laid_off": 10000,
+      "industry": "Consumer",
+      "percentage": null
+    },
+    {
+      "company": "Amazon",
+      "date": "2022-11-16",
+      "laid_off": 10000,
+      "industry": "Retail",
+      "percentage": 3
+    },
+    {
+      "company": "Microsoft",
+      "date": "2023-01-18",
+      "laid_off": 10000,
+      "industry": "Other",
+      "percentage": 5
+    },
+    {
+      "company": "Microsoft",
+      "date": "2025-07-02",
+      "laid_off": 9000,
+      "industry": "Other",
+      "percentage": 4
+    },
+    {
+      "company": "Amazon",
+      "date": "2023-03-20",
+      "laid_off": 9000,
+      "industry": "Retail",
+      "percentage": null
+    },
+    {
+      "company": "Salesforce",
+      "date": "2023-01-04",
+      "laid_off": 8000,
       "industry": "Sales",
-      "total": 1132,
-      "companies": 21
+      "percentage": 10
     },
     {
-      "industry": "Support",
-      "total": 1059,
-      "companies": 15
+      "company": "Amazon",
+      "date": "2023-01-04",
+      "laid_off": 8000,
+      "industry": "Retail",
+      "percentage": 2
     },
     {
-      "industry": "Product",
-      "total": 914,
-      "companies": 17
+      "company": "Dell",
+      "date": "2023-02-06",
+      "laid_off": 6650,
+      "industry": "Hardware",
+      "percentage": 5
     },
     {
-      "industry": "Fitness",
-      "total": 742,
-      "companies": 11
+      "company": "Dell",
+      "date": "2024-03-25",
+      "laid_off": 6000,
+      "industry": "Hardware",
+      "percentage": 5
     },
     {
-      "industry": "AI",
-      "total": 375,
-      "companies": 16
+      "company": "Microsoft",
+      "date": "2025-05-13",
+      "laid_off": 6000,
+      "industry": "Other",
+      "percentage": 3
     },
     {
-      "industry": "Legal",
-      "total": 274,
-      "companies": 6
+      "company": "Cisco",
+      "date": "2024-08-09",
+      "laid_off": 5600,
+      "industry": "Infrastructure",
+      "percentage": 7
     },
     {
-      "industry": "Construction",
-      "total": 214,
-      "companies": 10
+      "company": "Intel",
+      "date": "2025-07-11",
+      "laid_off": 5000,
+      "industry": "Hardware",
+      "percentage": null
     },
     {
-      "industry": null,
-      "total": 35,
-      "companies": 1
+      "company": "Micron",
+      "date": "2023-01-01",
+      "laid_off": 4800,
+      "industry": "Hardware",
+      "percentage": 10
+    },
+    {
+      "company": "Cisco",
+      "date": "2024-02-14",
+      "laid_off": 4250,
+      "industry": "Infrastructure",
+      "percentage": 5
+    },
+    {
+      "company": "Cisco",
+      "date": "2022-11-16",
+      "laid_off": 4100,
+      "industry": "Infrastructure",
+      "percentage": 5
+    },
+    {
+      "company": "Block",
+      "date": "2026-02-26",
+      "laid_off": 4000,
+      "industry": "Finance",
+      "percentage": 40
+    },
+    {
+      "company": "HP",
+      "date": "2025-11-25",
+      "laid_off": 4000,
+      "industry": "Hardware",
+      "percentage": null
+    },
+    {
+      "company": "Salesforce",
+      "date": "2025-08-31",
+      "laid_off": 4000,
+      "industry": "Sales",
+      "percentage": null
     }
   ],
-  "top_companies": [
+  "recent_events": [
     {
-      "company": "Flink",
-      "total": 8100,
-      "rounds": 2
+      "company": "Supernal",
+      "date": "2026-03-04",
+      "laid_off": 296,
+      "industry": "Transportation",
+      "percentage": 80
     },
     {
-      "company": "Getir",
-      "total": 5900,
-      "rounds": 4
+      "company": "At-Bay",
+      "date": "2026-03-04",
+      "laid_off": 25,
+      "industry": "Security",
+      "percentage": null
     },
     {
-      "company": "Paytm",
-      "total": 4500,
-      "rounds": 2
+      "company": "MicroVision",
+      "date": "2026-03-03",
+      "laid_off": 49,
+      "industry": "Other",
+      "percentage": null
     },
     {
-      "company": "Toshiba",
-      "total": 4000,
-      "rounds": 1
+      "company": "Block",
+      "date": "2026-02-26",
+      "laid_off": 4000,
+      "industry": "Finance",
+      "percentage": 40
     },
     {
-      "company": "Indeed",
-      "total": 3200,
-      "rounds": 2
+      "company": "C3.ai",
+      "date": "2026-02-25",
+      "laid_off": 280,
+      "industry": "AI",
+      "percentage": 26
     },
     {
-      "company": "Byju's",
-      "total": 3000,
-      "rounds": 3
+      "company": "TrueCar",
+      "date": "2026-02-24",
+      "laid_off": 100,
+      "industry": "Transportation",
+      "percentage": 30
     },
     {
-      "company": "Cerner",
-      "total": 3000,
-      "rounds": 2
+      "company": "Cyberark",
+      "date": "2026-02-17",
+      "laid_off": 500,
+      "industry": "Security",
+      "percentage": 12
     },
     {
-      "company": "VMware",
-      "total": 2837,
-      "rounds": 1
+      "company": "Axonius",
+      "date": "2026-02-15",
+      "laid_off": 40,
+      "industry": "Security",
+      "percentage": 4
     },
     {
-      "company": "UKG",
-      "total": 2465,
-      "rounds": 2
+      "company": "Clari",
+      "date": "2026-02-12",
+      "laid_off": 76,
+      "industry": "Sales",
+      "percentage": null
     },
     {
-      "company": "OLX Group",
-      "total": 2300,
-      "rounds": 2
+      "company": "Glossier",
+      "date": "2026-02-11",
+      "laid_off": 50,
+      "industry": "Retail",
+      "percentage": 33
     },
     {
-      "company": "Farfetch",
-      "total": 2000,
-      "rounds": 1
+      "company": "Workday",
+      "date": "2026-02-04",
+      "laid_off": 400,
+      "industry": "HR",
+      "percentage": 2
     },
     {
-      "company": "Just Eat",
-      "total": 2000,
-      "rounds": 2
+      "company": "Zipcar",
+      "date": "2026-02-02",
+      "laid_off": 126,
+      "industry": "Transportation",
+      "percentage": null
     },
     {
-      "company": "Bytedance",
-      "total": 1950,
-      "rounds": 4
+      "company": "Zillow",
+      "date": "2026-02-02",
+      "laid_off": 200,
+      "industry": "Real Estate",
+      "percentage": null
     },
     {
-      "company": "Cruise",
-      "total": 1900,
-      "rounds": 2
+      "company": "Expedia",
+      "date": "2026-02-01",
+      "laid_off": 100,
+      "industry": "Travel",
+      "percentage": null
     },
     {
-      "company": "TikTok",
-      "total": 1610,
-      "rounds": 5
+      "company": "Amazon",
+      "date": "2026-01-28",
+      "laid_off": 16000,
+      "industry": "Retail",
+      "percentage": null
     },
     {
-      "company": "Northvolt",
-      "total": 1600,
-      "rounds": 1
+      "company": "Pinterest",
+      "date": "2026-01-27",
+      "laid_off": 700,
+      "industry": "Consumer",
+      "percentage": 15
     },
     {
-      "company": "Yahoo",
-      "total": 1600,
-      "rounds": 3
+      "company": "Autodesk",
+      "date": "2026-01-22",
+      "laid_off": 1000,
+      "industry": "Other",
+      "percentage": 7
     },
     {
-      "company": "LinkedIn",
-      "total": 1578,
-      "rounds": 4
+      "company": "Tipalti",
+      "date": "2026-01-15",
+      "laid_off": 100,
+      "industry": "Finance",
+      "percentage": null
     },
     {
-      "company": "Copia",
-      "total": 1410,
-      "rounds": 2
+      "company": "Meta",
+      "date": "2026-01-13",
+      "laid_off": 1500,
+      "industry": "Consumer",
+      "percentage": 2
     },
     {
-      "company": "Flipkart",
-      "total": 1100,
-      "rounds": 2
+      "company": "FormFactor",
+      "date": "2026-01-09",
+      "laid_off": 220,
+      "industry": "Manufacturing",
+      "percentage": 11
+    },
+    {
+      "company": "Tailwind Labs",
+      "date": "2026-01-08",
+      "laid_off": 3,
+      "industry": "Product",
+      "percentage": null
+    },
+    {
+      "company": "Kaseya",
+      "date": "2026-01-08",
+      "laid_off": 250,
+      "industry": "Security",
+      "percentage": 5
+    },
+    {
+      "company": "Angi",
+      "date": "2026-01-07",
+      "laid_off": 350,
+      "industry": "Consumer",
+      "percentage": null
+    },
+    {
+      "company": "Yellow.ai",
+      "date": "2025-12-23",
+      "laid_off": 100,
+      "industry": "Support",
+      "percentage": 30
+    },
+    {
+      "company": "Amazon",
+      "date": "2025-12-15",
+      "laid_off": 84,
+      "industry": "Retail",
+      "percentage": null
     }
   ],
   "warn_monthly": {
@@ -500,24 +1162,221 @@
     ],
     "data": [
       {
-        "date": "2020-01-01",
-        "total": 44469
+        "date": "2025-03-01",
+        "total": 18502
       },
       {
-        "date": "2020-02-01",
-        "total": 39403
+        "date": "2025-04-01",
+        "total": 40627
       },
       {
-        "date": "2020-03-01",
-        "total": 1104700
+        "date": "2025-05-01",
+        "total": 59112
       },
       {
-        "date": "2020-04-01",
-        "total": 996867
+        "date": "2025-06-01",
+        "total": 32695
       },
       {
-        "date": "2020-05-01",
-        "total": 98302
+        "date": "2025-07-01",
+        "total": 38879
+      },
+      {
+        "date": "2025-08-01",
+        "total": 26405
+      },
+      {
+        "date": "2025-09-01",
+        "total": 37941
+      },
+      {
+        "date": "2025-10-01",
+        "total": 54380
+      },
+      {
+        "date": "2025-11-01",
+        "total": 33639
+      },
+      {
+        "date": "2025-12-01",
+        "total": 19122
+      },
+      {
+        "date": "2026-01-01",
+        "total": 43114
+      },
+      {
+        "date": "2026-02-01",
+        "total": 32273
+      },
+      {
+        "date": "2026-03-01",
+        "total": 8786
+      },
+      {
+        "date": "2026-04-01",
+        "total": 161
+      },
+      {
+        "date": "2026-05-01",
+        "total": 63
+      }
+    ]
+  },
+  "warn_industry": {
+    "title": "WARN Notices by Industry",
+    "subtitle": "Monthly employees affected by industry (government-sourced)",
+    "labels": [
+      "Manufacturing",
+      "Health Care and Social Assistance",
+      "Transportation and Warehousing",
+      "Professional, Scientific, and Technical Services",
+      "Retail Trade",
+      "Accommodation and Food Services",
+      "Administrative and Support and Waste Management",
+      "Information"
+    ],
+    "data": [
+      {
+        "date": "2025-03-01",
+        "Manufacturing": 2012,
+        "Accommodation and Food Services": 1175,
+        "Administrative and Support and Waste Management": 1,
+        "Health Care and Social Assistance": 652,
+        "Information": 710,
+        "Transportation and Warehousing": 1278,
+        "Professional, Scientific, and Technical Services": 1162,
+        "Retail Trade": 474
+      },
+      {
+        "date": "2025-04-01",
+        "Transportation and Warehousing": 4646,
+        "Information": 1025,
+        "Retail Trade": 804,
+        "Health Care and Social Assistance": 5245,
+        "Professional, Scientific, and Technical Services": 1919,
+        "Manufacturing": 6499,
+        "Accommodation and Food Services": 2732
+      },
+      {
+        "date": "2025-05-01",
+        "Manufacturing": 6193,
+        "Professional, Scientific, and Technical Services": 9732,
+        "Information": 1731,
+        "Health Care and Social Assistance": 2446,
+        "Transportation and Warehousing": 1397,
+        "Administrative and Support and Waste Management": 16132,
+        "Accommodation and Food Services": 3750,
+        "Retail Trade": 4702
+      },
+      {
+        "date": "2025-06-01",
+        "Health Care and Social Assistance": 2776,
+        "Professional, Scientific, and Technical Services": 1535,
+        "Manufacturing": 4549,
+        "Transportation and Warehousing": 4131,
+        "Retail Trade": 1942,
+        "Accommodation and Food Services": 1686,
+        "Information": 1164
+      },
+      {
+        "date": "2025-07-01",
+        "Retail Trade": 1306,
+        "Accommodation and Food Services": 1066,
+        "Professional, Scientific, and Technical Services": 3579,
+        "Information": 1161,
+        "Health Care and Social Assistance": 4485,
+        "Transportation and Warehousing": 2375,
+        "Manufacturing": 7916
+      },
+      {
+        "date": "2025-08-01",
+        "Health Care and Social Assistance": 2174,
+        "Accommodation and Food Services": 446,
+        "Transportation and Warehousing": 1992,
+        "Information": 660,
+        "Administrative and Support and Waste Management": 4,
+        "Retail Trade": 620,
+        "Professional, Scientific, and Technical Services": 1889,
+        "Manufacturing": 7036
+      },
+      {
+        "date": "2025-09-01",
+        "Health Care and Social Assistance": 3935,
+        "Information": 134,
+        "Retail Trade": 1353,
+        "Transportation and Warehousing": 3781,
+        "Accommodation and Food Services": 1012,
+        "Administrative and Support and Waste Management": 34,
+        "Professional, Scientific, and Technical Services": 2265,
+        "Manufacturing": 5612
+      },
+      {
+        "date": "2025-10-01",
+        "Transportation and Warehousing": 1311,
+        "Health Care and Social Assistance": 6202,
+        "Professional, Scientific, and Technical Services": 1550,
+        "Accommodation and Food Services": 2993,
+        "Manufacturing": 7746,
+        "Retail Trade": 2441,
+        "Information": 1598
+      },
+      {
+        "date": "2025-11-01",
+        "Professional, Scientific, and Technical Services": 868,
+        "Manufacturing": 14546,
+        "Information": 498,
+        "Health Care and Social Assistance": 1024,
+        "Accommodation and Food Services": 1019,
+        "Retail Trade": 2114,
+        "Transportation and Warehousing": 3694
+      },
+      {
+        "date": "2025-12-01",
+        "Accommodation and Food Services": 347,
+        "Transportation and Warehousing": 1390,
+        "Health Care and Social Assistance": 1485,
+        "Professional, Scientific, and Technical Services": 527,
+        "Retail Trade": 512,
+        "Information": 478,
+        "Manufacturing": 5660
+      },
+      {
+        "date": "2026-01-01",
+        "Accommodation and Food Services": 1387,
+        "Retail Trade": 5626,
+        "Health Care and Social Assistance": 2561,
+        "Manufacturing": 8816,
+        "Transportation and Warehousing": 2555,
+        "Information": 1463,
+        "Professional, Scientific, and Technical Services": 835
+      },
+      {
+        "date": "2026-02-01",
+        "Health Care and Social Assistance": 4795,
+        "Professional, Scientific, and Technical Services": 1100,
+        "Manufacturing": 4504,
+        "Information": 2263,
+        "Accommodation and Food Services": 1430,
+        "Transportation and Warehousing": 1533,
+        "Retail Trade": 1840
+      },
+      {
+        "date": "2026-03-01",
+        "Information": 32,
+        "Health Care and Social Assistance": 155,
+        "Transportation and Warehousing": 246,
+        "Retail Trade": 241,
+        "Manufacturing": 715,
+        "Professional, Scientific, and Technical Services": 79
+      },
+      {
+        "date": "2026-04-01",
+        "Transportation and Warehousing": 161
+      },
+      {
+        "date": "2026-05-01",
+        "Transportation and Warehousing": 63
       }
     ]
   }

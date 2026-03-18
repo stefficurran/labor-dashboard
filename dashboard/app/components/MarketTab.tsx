@@ -12,10 +12,11 @@ interface SeriesGroup {
 }
 
 interface MarketTabProps {
-  market: Record<string, SeriesGroup> | null;
+  market: Record<string, any> | null;
+  correlation: Record<string, any> | null;
 }
 
-export default function MarketTab({ market }: MarketTabProps) {
+export default function MarketTab({ market, correlation }: MarketTabProps) {
   const [timeRange, setTimeRange] = useState<number>(2016);
 
   if (!market) {
@@ -42,7 +43,7 @@ export default function MarketTab({ market }: MarketTabProps) {
   // Find first data point of current year for YTD calc
   const currentYear = new Date().getFullYear();
   const ytdBaseline = indicesData.find(
-    (d) => new Date(d.date as string).getFullYear() === currentYear
+    (d: Record<string, unknown>) => new Date(d.date as string).getFullYear() === currentYear
   );
   const sp500Ytd = sp500Latest && ytdBaseline
     ? ((sp500Latest - (ytdBaseline["S&P 500"] as number)) / (ytdBaseline["S&P 500"] as number)) * 100
@@ -111,6 +112,15 @@ export default function MarketTab({ market }: MarketTabProps) {
         startYear={timeRange}
         explainer="Both indexed to 100. Stock prices tend to lead employment by 1-2 quarters — when the market drops, hiring freezes follow. When the lines diverge significantly, it often signals a coming correction in the lagging metric."
       />
+
+      {correlation?.nasdaq_vs_openings && (
+        <TimeSeriesChart
+          {...correlation.nasdaq_vs_openings}
+          type="line"
+          startYear={timeRange}
+          explainer="Does the stock market lead hiring? This overlays the NASDAQ index with tech job openings, both indexed to 100. When the NASDAQ moves first and openings follow months later, the market may be a leading indicator for tech hiring."
+        />
+      )}
     </div>
   );
 }

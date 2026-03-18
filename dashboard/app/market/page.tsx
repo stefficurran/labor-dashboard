@@ -12,7 +12,7 @@ export default function MarketPage() {
     <div className="min-h-screen bg-gray-950 text-gray-100">
       <BackNav title="Stock Market" />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-        <MarketTab market={data.market} />
+        <MarketTab market={data.market} correlation={data.correlation} />
       </main>
     </div>
   );

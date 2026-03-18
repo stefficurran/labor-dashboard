@@ -1,8 +1,10 @@
 """Export event study data for AI model releases — measures stock market reactions."""
 
+import bisect
 import json
 import duckdb
 import os
+from datetime import date, timedelta
 
 DB_PATH = "../data/labor.duckdb"
 OUT_PATH = "../dashboard/public/data"
@@ -29,7 +31,39 @@ for series_id in SERIES:
     # Store as list of (date, value) tuples — dates are already date objects
     prices[series_id] = rows
 
+# Get all USINFO monthly data once
+usinfo_rows = con.execute("""
+    SELECT date, value FROM observations
+    WHERE series_id = 'USINFO' ORDER BY date
+""").fetchall()
+usinfo_data = {r[0]: r[1] for r in usinfo_rows}
+usinfo_dates = sorted(usinfo_data.keys())
+
 con.close()
+
+
+def nearest_usinfo(event_date, usinfo_dates, usinfo_data):
+    """Find the USINFO value closest to the given date."""
+    idx = bisect.bisect_left(usinfo_dates, event_date)
+    if idx >= len(usinfo_dates):
+        idx = len(usinfo_dates) - 1
+    elif idx > 0:
+        before = usinfo_dates[idx - 1]
+        after = usinfo_dates[idx]
+        if (event_date - before) <= (after - event_date):
+            idx = idx - 1
+    return usinfo_data[usinfo_dates[idx]]
+
+
+def employment_at_offset(event_date, months_offset, usinfo_dates, usinfo_data):
+    """Find the USINFO value ~N months after event_date."""
+    target = date(
+        event_date.year + (event_date.month + months_offset - 1) // 12,
+        (event_date.month + months_offset - 1) % 12 + 1,
+        1,
+    )
+    return nearest_usinfo(target, usinfo_dates, usinfo_data)
+
 
 # Build date->index lookup for each series
 date_index = {}
@@ -49,8 +83,6 @@ sp500_set = set(sp500_dates)
 
 def find_nearest_trading_day(target_date):
     """Find the nearest trading day on or after target_date in SP500 data."""
-    from datetime import timedelta
-
     d = target_date
     for _ in range(10):  # look up to 10 calendar days forward
         if d in sp500_set:
@@ -111,11 +143,9 @@ def compute_cumulative_returns(window_prices):
 output_events = []
 
 for event in ai_events:
-    from datetime import date as date_cls
-
     # Parse event date
     parts = event["date"].split("-")
-    event_date = date_cls(int(parts[0]), int(parts[1]), int(parts[2]))
+    event_date = date(int(parts[0]), int(parts[1]), int(parts[2]))
 
     # Skip events before SP500 data starts (2016)
     if event_date.year < 2016:
@@ -185,6 +215,16 @@ for event in ai_events:
         "tech_premium_10d": tech_premium_10d,
     }
 
+    # Employment context from USINFO
+    if usinfo_dates:
+        emp_at = nearest_usinfo(event_date, usinfo_dates, usinfo_data)
+        emp_6m = employment_at_offset(event_date, 6, usinfo_dates, usinfo_data)
+        summary["info_employment_at_event"] = emp_at
+        summary["info_employment_6m_later"] = emp_6m
+        summary["info_employment_delta_pct"] = (
+            round((emp_6m - emp_at) / emp_at * 100, 2) if emp_at else None
+        )
+
     output_events.append({
         "id": event["id"],
         "title": event["title"],
@@ -206,4 +246,5 @@ with open(f"{OUT_PATH}/event_study.json", "w") as f:
 print(f"Exported {len(output_events)} event studies to {OUT_PATH}/event_study.json")
 for ev in output_events:
     s = ev["summary"]
-    print(f"  {ev['id']}: SP500 10d={s['sp500_car_10d']}%, NASDAQ 10d={s['nasdaq_car_10d']}%, NVDA 10d={s['nvda_car_10d']}%, tech_premium={s['tech_premium_10d']}%")
+    emp_delta = s.get('info_employment_delta_pct', 'N/A')
+    print(f"  {ev['id']}: SP500 10d={s['sp500_car_10d']}%, NASDAQ 10d={s['nasdaq_car_10d']}%, NVDA 10d={s['nvda_car_10d']}%, tech_premium={s['tech_premium_10d']}%, info_emp_delta_6m={emp_delta}%")

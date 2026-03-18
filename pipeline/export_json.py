@@ -50,6 +50,7 @@ series_groups = {
             "JTSJOL": "Job Openings",
             "JTSHIL": "Hires",
             "JTSQUL": "Quits",
+            "JTSLDL": "Layoffs",
         },
     },
     "unemployment": {
@@ -187,6 +188,14 @@ jolts_comparisons = {
         "info_label": "Information",
         "total_label": "All Industries",
     },
+    "jolts_layoffs_comparison": {
+        "title": "Layoffs: Info Sector vs All Industries",
+        "subtitle": "Indexed to 100 at start of period — compare the trend, not the level",
+        "info_series": "JTU5100LDL",
+        "total_series": "JTSLDL",
+        "info_label": "Information",
+        "total_label": "All Industries",
+    },
 }
 
 for key, comp in jolts_comparisons.items():
@@ -214,6 +223,81 @@ for key, comp in jolts_comparisons.items():
                 for r in rows
             ],
         }
+
+# Net employment flow as % of sector employment — normalizes for sector size
+net_flow_info = con.execute("""
+    SELECT h.date,
+           h.value AS hires,
+           q.value AS quits,
+           l.value AS layoffs,
+           ROUND(h.value - q.value - l.value, 1) AS net_flow,
+           e.value AS employment,
+           ROUND((h.value - q.value - l.value) / NULLIF(e.value, 0) * 100, 2) AS net_flow_pct
+    FROM observations h
+    JOIN observations q ON h.date = q.date
+    JOIN observations l ON h.date = l.date
+    JOIN observations e ON h.date = e.date
+    WHERE h.series_id = 'JTU5100HIL'
+      AND q.series_id = 'JTU5100QUL'
+      AND l.series_id = 'JTU5100LDL'
+      AND e.series_id = 'USINFO'
+    ORDER BY h.date
+""").fetchall()
+
+analytics["info_net_flow"] = {
+    "title": "Net Employment Flow: Information Sector",
+    "subtitle": "Hires minus quits minus layoffs as % of sector employment",
+    "labels": ["net_flow_pct"],
+    "data": [
+        {"date": r[0].isoformat(), "net_flow": r[4], "net_flow_pct": r[6]}
+        for r in net_flow_info
+    ],
+}
+
+net_flow_total = con.execute("""
+    SELECT h.date,
+           h.value AS hires,
+           q.value AS quits,
+           l.value AS layoffs,
+           ROUND(h.value - q.value - l.value, 1) AS net_flow,
+           e.value AS employment,
+           ROUND((h.value - q.value - l.value) / NULLIF(e.value, 0) * 100, 2) AS net_flow_pct
+    FROM observations h
+    JOIN observations q ON h.date = q.date
+    JOIN observations l ON h.date = l.date
+    JOIN observations e ON h.date = e.date
+    WHERE h.series_id = 'JTSHIL'
+      AND q.series_id = 'JTSQUL'
+      AND l.series_id = 'JTSLDL'
+      AND e.series_id = 'PAYEMS'
+    ORDER BY h.date
+""").fetchall()
+
+analytics["total_net_flow"] = {
+    "title": "Net Employment Flow: Total Nonfarm",
+    "subtitle": "Hires minus quits minus layoffs as % of total employment",
+    "labels": ["net_flow_pct"],
+    "data": [
+        {"date": r[0].isoformat(), "net_flow": r[4], "net_flow_pct": r[6]}
+        for r in net_flow_total
+    ],
+}
+
+mom_rows = con.execute("""
+    SELECT date, value,
+           value - LAG(value, 1) OVER (ORDER BY date) AS mom_delta
+    FROM observations WHERE series_id = 'USINFO' ORDER BY date
+""").fetchall()
+
+analytics["info_employment_mom"] = {
+    "title": "Information Sector: Month-over-Month Employment Change",
+    "subtitle": "Thousands of employees gained or lost each month",
+    "labels": ["mom_delta"],
+    "data": [
+        {"date": r[0].isoformat(), "employment": r[1], "mom_delta": r[2]}
+        for r in mom_rows if r[2] is not None
+    ],
+}
 
 with open(f"{OUT_PATH}/analytics.json", "w") as f:
     json.dump(analytics, f)

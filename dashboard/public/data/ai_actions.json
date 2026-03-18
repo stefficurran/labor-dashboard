@@ -1,114 +1,113 @@
 {
-  "generated_at": "2026-03-18T13:27:07.348848+00:00",
+  "generated_at": "2026-03-18T19:23:14.826274+00:00",
   "actions": [
     {
-      "id": "tech-job-market-softening",
+      "id": "tech-sector-woes",
       "category": "market",
-      "title": "Tech Job Market Softening Notice",
-      "body": "Employment in the Information sector is down 2.23% year-over-year, with a 13.7% month-over-month increase in layoffs. This suggests a cooling in the market, so it's wise to be cautious about job security.",
+      "title": "Tech Sector Woes: Employment and Layoffs",
+      "body": "Information sector employment is down 2.23% year-over-year, with significant layoffs, such as Indeed's 3200 cuts. This suggests a challenging environment for tech workers, with potential for continued instability.",
       "confidence": "high",
       "data_points": [
         "employment_yoy",
-        "layoffs_mom_pct"
+        "layoffs"
       ]
     },
     {
-      "id": "quits-rate-indicates-stability",
+      "id": "quits-rate-stability",
       "category": "career",
-      "title": "Low Quits Rate Indicates Stability",
-      "body": "The quits rate in the tech sector is at 1.77%, indicating that workers are staying put despite the market downturn. This suggests that those with jobs are not actively seeking to leave, which might be a prudent strategy in the current climate.",
-      "confidence": "high",
-      "data_points": [
-        "quits_rate_pct",
-        "employment_yoy"
-      ]
-    },
-    {
-      "id": "watch-healthcare-sector-growth",
-      "category": "watchlist",
-      "title": "Watch Healthcare for Career Moves",
-      "body": "With a 2.94% year-over-year job growth, the Healthcare sector is leading in employment gains. Tech professionals might find opportunities by pivoting their skills to this thriving sector.",
+      "title": "Low Quits Rate Indicates Job Stability",
+      "body": "With a quits rate of 1.77% and a stable unemployment rate of 4.4%, tech workers may find their current positions relatively secure, despite broader market volatility.",
       "confidence": "medium",
       "data_points": [
-        "sector_rankings",
-        "employment"
+        "quits_rate",
+        "unemployment"
       ]
     },
     {
-      "id": "ai-adoption-high-in-tech",
-      "category": "market",
-      "title": "AI Adoption High in Tech Sector",
-      "body": "24.8% of AI job adoption is in the Information sector, which is the highest across industries. This means tech professionals should consider upskilling in AI to enhance their career prospects.",
-      "confidence": "high",
-      "data_points": [
-        "ai",
-        "employment_yoy"
-      ]
-    },
-    {
-      "id": "careful-with-tech-stocks",
-      "category": "market",
-      "title": "Be Cautious with Tech Stocks",
-      "body": "The S&P 500 declined by 2.4% month-over-month, reflecting broader market volatility. Tech professionals invested in stocks should monitor their portfolios closely.",
-      "confidence": "medium",
-      "data_points": [
-        "market",
-        "sp500_mom_pct"
-      ]
-    },
-    {
-      "id": "tech-job-openings-outpace-hires",
-      "category": "market",
-      "title": "Tech Job Openings Outpace Hires",
-      "body": "With 118,000 job openings and only 95,000 hires, there are more positions available than filled in tech. This gap might offer opportunities for job seekers, albeit with a competitive edge.",
-      "confidence": "medium",
-      "data_points": [
-        "jolts",
-        "employment"
-      ]
-    },
-    {
-      "id": "consider-transferable-skills",
-      "category": "career",
-      "title": "Consider Transferable Skills",
-      "body": "As the Information sector ranks 16th out of 17 in job growth, tech professionals should assess their transferable skills for opportunities in growing sectors like Education & Health.",
-      "confidence": "medium",
-      "data_points": [
-        "sector_rankings",
-        "employment_yoy"
-      ]
-    },
-    {
-      "id": "forward-look-at-ai-opportunities",
+      "id": "ai-opportunity-growth",
       "category": "prediction",
-      "title": "Forward Look at AI Opportunities",
-      "body": "Given the high AI adoption in tech (24.8%), expect increased demand for AI-related skills. Professionals should consider AI training as a future-proofing measure.",
+      "title": "AI Adoption in Tech: A Growth Area",
+      "body": "AI now represents 4.9% of jobs, with 24.8% of these in the Information sector. This suggests a promising area for skill development and career growth in tech.",
       "confidence": "high",
       "data_points": [
-        "ai",
+        "ai_job_share_pct",
+        "top_adoption_sectors"
+      ]
+    },
+    {
+      "id": "market-uncertainty",
+      "category": "market",
+      "title": "Market Uncertainty: S&P 500 Down",
+      "body": "The S&P 500 has decreased by 2.4% month-over-month, indicating market uncertainty that could impact tech investments and hiring trends.",
+      "confidence": "medium",
+      "data_points": [
+        "sp500_mom_pct",
+        "nasdaq"
+      ]
+    },
+    {
+      "id": "job-openings-vs-hires",
+      "category": "market",
+      "title": "Job Openings Outpace Hires",
+      "body": "There are 118,000 job openings versus 95,000 hires in the tech sector, suggesting companies are cautious about hiring despite available positions.",
+      "confidence": "medium",
+      "data_points": [
+        "openings",
+        "hires"
+      ]
+    },
+    {
+      "id": "explore-healthcare-transition",
+      "category": "career",
+      "title": "Consider Transition to Growing Sectors",
+      "body": "As healthcare grows by 2.94% year-over-year, tech professionals could consider transitioning to tech roles within healthcare for better stability and growth.",
+      "confidence": "high",
+      "data_points": [
+        "sector_rankings",
         "employment_yoy"
       ]
     },
     {
-      "id": "layoffs-in-tech-affect-sentiment",
-      "category": "market",
-      "title": "Layoffs in Tech Affect Sentiment",
-      "body": "Recent layoffs in top tech companies like Flink and Getir suggest a cautious sentiment in the industry. Professionals should be prepared for potential disruptions.",
+      "id": "watch-semiconductor-trends",
+      "category": "watchlist",
+      "title": "Watch Semiconductor Index Movement",
+      "body": "The semiconductor index is at 176.1, a key indicator for tech hardware trends. Keeping an eye on this could provide insights into future tech hardware market shifts.",
+      "confidence": "medium",
+      "data_points": [
+        "semiconductor_index"
+      ]
+    },
+    {
+      "id": "tech-layoffs-watch",
+      "category": "watchlist",
+      "title": "Monitor Tech Layoff Patterns",
+      "body": "With major layoffs from companies like VMware and Cerner, monitoring these patterns can help anticipate further job market contractions in the tech sector.",
       "confidence": "high",
       "data_points": [
         "layoffs",
-        "employment_yoy"
+        "top_companies"
       ]
     },
     {
-      "id": "monitoring-semiconductor-index",
-      "category": "watchlist",
-      "title": "Monitoring Semiconductor Index",
-      "body": "The semiconductor index stands at 176.1, an important metric for tech hardware development. Keeping an eye on this index can provide insights into tech sector dynamics.",
+      "id": "ai-disruption-preparedness",
+      "category": "career",
+      "title": "Prepare for AI-Driven Disruptions",
+      "body": "AI technology is rapidly advancing, with the Information sector leading in adoption. Being proactive in upskilling in AI can provide a competitive edge.",
+      "confidence": "high",
+      "data_points": [
+        "top_adoption_sectors",
+        "recent_ai_events"
+      ]
+    },
+    {
+      "id": "cautious-hiring-strategies",
+      "category": "prediction",
+      "title": "Expect Cautious Hiring in Tech",
+      "body": "With a high openings-to-hires ratio of 1.24 and significant layoffs, anticipate cautious hiring strategies from tech firms, potentially affecting job seekers.",
       "confidence": "medium",
       "data_points": [
-        "ai",
-        "market"
+        "openings_hires_ratio",
+        "layoffs_mom_pct"
       ]
     }
   ]

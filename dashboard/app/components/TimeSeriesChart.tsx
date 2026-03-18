@@ -24,6 +24,10 @@ const COLORS = [
   "#ef4444", // red
   "#8b5cf6", // violet
   "#ec4899", // pink
+  "#14b8a6", // teal
+  "#f97316", // orange
+  "#6366f1", // indigo
+  "#84cc16", // lime
 ];
 
 interface TimeSeriesChartProps {
@@ -40,6 +44,7 @@ interface TimeSeriesChartProps {
   selectedEventId?: string | null;
   onEventClick?: (event: LaborEvent) => void;
   compact?: boolean;
+  stacked?: boolean;
 }
 
 // Clickable marker rendered at the top of each event reference line
@@ -116,6 +121,7 @@ export default function TimeSeriesChart({
   selectedEventId,
   onEventClick,
   compact = false,
+  stacked = false,
 }: TimeSeriesChartProps) {
   const filtered = startYear
     ? data.filter((d) => new Date(d.date as string).getFullYear() >= startYear)
@@ -211,6 +217,7 @@ export default function TimeSeriesChart({
                 dataKey={label}
                 fill={color}
                 fillOpacity={0.7}
+                stackId={stacked ? "stack" : undefined}
               />
             ) : (
               <Line

@@ -25,6 +25,7 @@ SERIES = {
     "JTSJOL": "Job Openings: Total Nonfarm",
     "JTSHIL": "Hires: Total Nonfarm",
     "JTSQUL": "Quits: Total Nonfarm",
+    "JTSLDL": "Layoffs/Discharges: Total Nonfarm",
 
     # Unemployment
     "LNU04032237": "Unemployment Rate: Information Industry",

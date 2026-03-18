@@ -4,7 +4,7 @@ import duckdb
 import polars as pl
 
 DB_PATH = "../data/labor.duckdb"
-CSV_PATH = "../data/layoffs_raw.csv"
+CSV_PATH = "../data/layoffs.csv"
 
 con = duckdb.connect(DB_PATH)
 
@@ -24,20 +24,16 @@ con.execute("""
     )
 """)
 
-# Read CSV
-df = pl.read_csv(CSV_PATH)
+# Read CSV with schema overrides for numeric columns
+df = pl.read_csv(CSV_PATH, schema_overrides={
+    "total_laid_off": pl.Float64,
+    "percentage_laid_off": pl.Float64,
+    "funds_raised": pl.Float64,
+})
 
-# Rename columns
+# Rename columns to match DB schema
 df = df.rename({
-    "Company": "company",
-    "Location_HQ": "location",
-    "Industry": "industry",
-    "Laid_Off_Count": "total_laid_off",
-    "Percentage": "percentage_laid_off",
-    "Date": "date",
-    "Stage": "stage",
-    "Country": "country",
-    "Funds_Raised": "funds_raised_millions",
+    "funds_raised": "funds_raised_millions",
 })
 
 # Keep only needed columns
@@ -53,11 +49,11 @@ df = df.filter(
     & (pl.col("total_laid_off").cast(pl.Utf8) != "Unknown")
 )
 
-# Cast total_laid_off to integer (may have been read as string)
-df = df.with_columns(pl.col("total_laid_off").cast(pl.Int64))
+# Cast total_laid_off to integer
+df = df.with_columns(pl.col("total_laid_off").cast(pl.Int64, strict=False))
 
-# Parse date
-df = df.with_columns(pl.col("date").str.to_date("%Y-%m-%d"))
+# Parse date (Kaggle CSV uses M/D/YYYY format)
+df = df.with_columns(pl.col("date").str.to_date("%m/%d/%Y"))
 
 # Strip whitespace from text columns
 text_cols = ["company", "location", "industry", "stage", "country"]
